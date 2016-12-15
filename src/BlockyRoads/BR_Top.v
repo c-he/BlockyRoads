@@ -19,7 +19,12 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module BR_Top(
-    );
+    input wire clk, clr,
+	output wire hsync, vsync,
+	output wire [3:0] red, green, blue
+	);
+	
+	Renderer render_unit( . clk(clk), .clr(clr), .hsync(hsync), .vsync(vsync), .red(red), .green(green), .blue(blue) );
 
 
 endmodule

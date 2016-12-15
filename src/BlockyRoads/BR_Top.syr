@@ -1,0 +1,618 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.39 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.39 secs
+ 
+--> Reading design: BR_Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "BR_Top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "BR_Top"
+Output Format                      : NGC
+Target Device                      : xc7a100t-1-csg324
+
+---- Source Options
+Top Module Name                    : BR_Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\vga_sync.v" into library work
+Parsing module <vga_sync>.
+Analyzing Verilog file "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\ipcore_dir\background.v" into library work
+Parsing module <background>.
+Analyzing Verilog file "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\vga_test.v" into library work
+Parsing module <vga_test>.
+Analyzing Verilog file "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" into library work
+Parsing module <Renderer>.
+Analyzing Verilog file "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\BR_Top.v" into library work
+Parsing module <BR_Top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <BR_Top>.
+
+Elaborating module <Renderer>.
+
+Elaborating module <vga_test>.
+
+Elaborating module <clkdiv>.
+WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\clkdiv.v" Line 41: Result of 4-bit expression is truncated to fit in 3-bit target.
+
+Elaborating module <vga_sync>.
+WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\vga_sync.v" Line 76: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\vga_sync.v" Line 86: Result of 11-bit expression is truncated to fit in 10-bit target.
+
+Elaborating module <background>.
+WARNING:HDLCompiler:1499 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\ipcore_dir\background.v" Line 39: Empty module <background> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\vga_test.v" Line 42: Size mismatch in connection of port <addra>. Formal port size is 18-bit while actual signal size is 19-bit.
+WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\vga_test.v" Line 46: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\vga_test.v" Line 47: Result of 21-bit expression is truncated to fit in 19-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <BR_Top>.
+    Related source file is "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\BR_Top.v".
+    Summary:
+	no macro.
+Unit <BR_Top> synthesized.
+
+Synthesizing Unit <Renderer>.
+    Related source file is "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v".
+    Summary:
+	no macro.
+Unit <Renderer> synthesized.
+
+Synthesizing Unit <vga_test>.
+    Related source file is "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\vga_test.v".
+    Found 20-bit adder for signal <n0021> created at line 47.
+    Found 10-bit subtractor for signal <y> created at line 31.
+    Found 10x10-bit multiplier for signal <n0029> created at line 47.
+    Found 10-bit comparator lessequal for signal <n0004> created at line 53
+    Found 10-bit comparator greater for signal <pixel_y[9]_GND_3_o_LessThan_6_o> created at line 53
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   6 Multiplexer(s).
+Unit <vga_test> synthesized.
+
+Synthesizing Unit <clkdiv>.
+    Related source file is "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\clkdiv.v".
+    Found 3-bit register for signal <p>.
+    Found 3-bit adder for signal <p[2]_GND_4_o_add_1_OUT> created at line 41.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 D-type flip-flop(s).
+Unit <clkdiv> synthesized.
+
+Synthesizing Unit <vga_sync>.
+    Related source file is "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\vga_sync.v".
+    Found 1-bit register for signal <v_sync_reg>.
+    Found 1-bit register for signal <h_sync_reg>.
+    Found 10-bit register for signal <h_count_reg>.
+    Found 10-bit register for signal <v_count_reg>.
+    Found 10-bit adder for signal <h_count_reg[9]_GND_5_o_add_4_OUT> created at line 76.
+    Found 10-bit adder for signal <v_count_reg[9]_GND_5_o_add_7_OUT> created at line 86.
+    Found 10-bit comparator lessequal for signal <n0012> created at line 92
+    Found 10-bit comparator lessequal for signal <n0014> created at line 92
+    Found 10-bit comparator lessequal for signal <n0017> created at line 94
+    Found 10-bit comparator lessequal for signal <n0019> created at line 94
+    Found 10-bit comparator greater for signal <h_count_reg[9]_PWR_5_o_LessThan_15_o> created at line 97
+    Found 10-bit comparator greater for signal <v_count_reg[9]_GND_5_o_LessThan_16_o> created at line 97
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <vga_sync> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 10x10-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 5
+ 10-bit adder                                          : 2
+ 10-bit subtractor                                     : 1
+ 20-bit adder                                          : 1
+ 3-bit adder                                           : 1
+# Registers                                            : 5
+ 1-bit register                                        : 2
+ 10-bit register                                       : 2
+ 3-bit register                                        : 1
+# Comparators                                          : 8
+ 10-bit comparator greater                             : 3
+ 10-bit comparator lessequal                           : 5
+# Multiplexers                                         : 8
+ 10-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/background.ngc>.
+Loading core <background> for timing and area information for instance <P1>.
+
+Synthesizing (advanced) Unit <clkdiv>.
+The following registers are absorbed into counter <p>: 1 register on signal <p>.
+Unit <clkdiv> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_sync>.
+The following registers are absorbed into counter <h_count_reg>: 1 register on signal <h_count_reg>.
+The following registers are absorbed into counter <v_count_reg>: 1 register on signal <v_count_reg>.
+Unit <vga_sync> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_test>.
+	Multiplier <Mmult_n0029> in block <vga_test> and adder/subtractor <Madd_n0021_Madd> in block <vga_test> are combined into a MAC<Maddsub_n0029>.
+Unit <vga_test> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 1
+ 10x10-to-18-bit MAC                                   : 1
+# Adders/Subtractors                                   : 1
+ 10-bit subtractor                                     : 1
+# Counters                                             : 3
+ 10-bit up counter                                     : 2
+ 3-bit up counter                                      : 1
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+# Comparators                                          : 8
+ 10-bit comparator greater                             : 3
+ 10-bit comparator lessequal                           : 5
+# Multiplexers                                         : 6
+ 4-bit 2-to-1 multiplexer                              : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <div_unit/p_2> of sequential type is unconnected in block <vga_test>.
+
+Optimizing unit <BR_Top> ...
+
+Optimizing unit <vga_test> ...
+
+Optimizing unit <vga_sync> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block BR_Top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : BR_Top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 412
+#      GND                         : 2
+#      INV                         : 2
+#      LUT1                        : 9
+#      LUT2                        : 19
+#      LUT3                        : 14
+#      LUT4                        : 3
+#      LUT5                        : 8
+#      LUT6                        : 280
+#      MUXCY                       : 35
+#      VCC                         : 2
+#      XORCY                       : 38
+# FlipFlops/Latches                : 30
+#      FDC                         : 2
+#      FDCE                        : 20
+#      FDE                         : 6
+#      FDR                         : 2
+# RAMS                             : 88
+#      RAMB36E1                    : 88
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 15
+#      IBUF                        : 1
+#      OBUF                        : 14
+# DSPs                             : 1
+#      DSP48E1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              30  out of  126800     0%  
+ Number of Slice LUTs:                  335  out of  63400     0%  
+    Number used as Logic:               335  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    341
+   Number with an unused Flip Flop:     311  out of    341    91%  
+   Number with an unused LUT:             6  out of    341     1%  
+   Number of fully used LUT-FF pairs:    24  out of    341     7%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          16
+ Number of bonded IOBs:                  16  out of    210     7%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               88  out of    135    65%  
+    Number using Block RAM only:         88
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+ Number of DSP48E1s:                      1  out of    240     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 96    |
+render_unit/debug_unit/div_unit/p_1| BUFG                   | 22    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                                                                                                                       | Buffer(FF name)                                                                                                                                                     | Load  |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+render_unit/debug_unit/P1/N1(render_unit/debug_unit/P1/XST_GND:G)                                                                                                                                                                                                                                                    | NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[26].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)    | 152   |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[64].ram.r/v6_init.ram/cascadelata_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[64].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[64].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[64].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[64].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[64].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[65].ram.r/v6_init.ram/cascadelata_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[65].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[65].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[65].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[65].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[65].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[66].ram.r/v6_init.ram/cascadelata_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[66].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[66].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[66].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[66].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[66].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[67].ram.r/v6_init.ram/cascadelata_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[67].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[67].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[67].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[67].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[67].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[68].ram.r/v6_init.ram/cascadelata_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[68].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[68].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[68].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[68].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[68].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[69].ram.r/v6_init.ram/cascadelata_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[69].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[69].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[69].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[69].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[69].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[70].ram.r/v6_init.ram/cascadelata_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[70].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[70].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[70].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[70].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[70].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[71].ram.r/v6_init.ram/cascadelata_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[71].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[71].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[71].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[71].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[71].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[72].ram.r/v6_init.ram/cascadelata_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[72].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[72].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[72].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[72].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[72].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[73].ram.r/v6_init.ram/cascadelata_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[73].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[73].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[73].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[73].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[73].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[74].ram.r/v6_init.ram/cascadelata_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[74].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[74].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[74].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[74].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[74].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[75].ram.r/v6_init.ram/cascadelata_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[75].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[75].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[75].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[75].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[75].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.398ns (Maximum Frequency: 294.291MHz)
+   Minimum input arrival time before clock: 1.040ns
+   Maximum output required time after clock: 4.462ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.458ns (frequency: 685.871MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               1.458ns (Levels of Logic = 1)
+  Source:            render_unit/debug_unit/div_unit/p_0 (FF)
+  Destination:       render_unit/debug_unit/div_unit/p_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: render_unit/debug_unit/div_unit/p_0 to render_unit/debug_unit/div_unit/p_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.478   0.405  render_unit/debug_unit/div_unit/p_0 (render_unit/debug_unit/div_unit/p_0)
+     INV:I->O              1   0.146   0.399  render_unit/debug_unit/div_unit/Mcount_p_xor<0>11_INV_0 (render_unit/debug_unit/Result<0>)
+     FDR:D                     0.030          render_unit/debug_unit/div_unit/p_0
+    ----------------------------------------
+    Total                      1.458ns (0.654ns logic, 0.804ns route)
+                                       (44.9% logic, 55.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'render_unit/debug_unit/div_unit/p_1'
+  Clock period: 3.398ns (frequency: 294.291MHz)
+  Total number of paths / destination ports: 1297 / 32
+-------------------------------------------------------------------------
+Delay:               3.398ns (Levels of Logic = 12)
+  Source:            render_unit/debug_unit/sync_unit/h_count_reg_1 (FF)
+  Destination:       render_unit/debug_unit/sync_unit/h_count_reg_9 (FF)
+  Source Clock:      render_unit/debug_unit/div_unit/p_1 rising
+  Destination Clock: render_unit/debug_unit/div_unit/p_1 rising
+
+  Data Path: render_unit/debug_unit/sync_unit/h_count_reg_1 to render_unit/debug_unit/sync_unit/h_count_reg_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.478   0.933  render_unit/debug_unit/sync_unit/h_count_reg_1 (render_unit/debug_unit/sync_unit/h_count_reg_1)
+     LUT5:I0->O           12   0.124   0.493  render_unit/debug_unit/sync_unit/h_end<9>_SW0 (N4)
+     LUT6:I5->O            1   0.124   0.000  render_unit/debug_unit/sync_unit/Mcount_h_count_reg_lut<0> (render_unit/debug_unit/sync_unit/Mcount_h_count_reg_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  render_unit/debug_unit/sync_unit/Mcount_h_count_reg_cy<0> (render_unit/debug_unit/sync_unit/Mcount_h_count_reg_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/debug_unit/sync_unit/Mcount_h_count_reg_cy<1> (render_unit/debug_unit/sync_unit/Mcount_h_count_reg_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/debug_unit/sync_unit/Mcount_h_count_reg_cy<2> (render_unit/debug_unit/sync_unit/Mcount_h_count_reg_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/debug_unit/sync_unit/Mcount_h_count_reg_cy<3> (render_unit/debug_unit/sync_unit/Mcount_h_count_reg_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/debug_unit/sync_unit/Mcount_h_count_reg_cy<4> (render_unit/debug_unit/sync_unit/Mcount_h_count_reg_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/debug_unit/sync_unit/Mcount_h_count_reg_cy<5> (render_unit/debug_unit/sync_unit/Mcount_h_count_reg_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/debug_unit/sync_unit/Mcount_h_count_reg_cy<6> (render_unit/debug_unit/sync_unit/Mcount_h_count_reg_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/debug_unit/sync_unit/Mcount_h_count_reg_cy<7> (render_unit/debug_unit/sync_unit/Mcount_h_count_reg_cy<7>)
+     MUXCY:CI->O           0   0.029   0.000  render_unit/debug_unit/sync_unit/Mcount_h_count_reg_cy<8> (render_unit/debug_unit/sync_unit/Mcount_h_count_reg_cy<8>)
+     XORCY:CI->O           1   0.510   0.000  render_unit/debug_unit/sync_unit/Mcount_h_count_reg_xor<9> (render_unit/debug_unit/sync_unit/Mcount_h_count_reg9)
+     FDCE:D                    0.030          render_unit/debug_unit/sync_unit/h_count_reg_9
+    ----------------------------------------
+    Total                      3.398ns (1.972ns logic, 1.426ns route)
+                                       (58.0% logic, 42.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.040ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       render_unit/debug_unit/div_unit/p_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: clr to render_unit/debug_unit/div_unit/p_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   0.001   0.545  clr_IBUF (clr_IBUF)
+     FDR:R                     0.494          render_unit/debug_unit/div_unit/p_0
+    ----------------------------------------
+    Total                      1.040ns (0.495ns logic, 0.545ns route)
+                                       (47.6% logic, 52.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'render_unit/debug_unit/div_unit/p_1'
+  Total number of paths / destination ports: 22 / 22
+-------------------------------------------------------------------------
+Offset:              1.040ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       render_unit/debug_unit/sync_unit/v_count_reg_9 (FF)
+  Destination Clock: render_unit/debug_unit/div_unit/p_1 rising
+
+  Data Path: clr to render_unit/debug_unit/sync_unit/v_count_reg_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   0.001   0.545  clr_IBUF (clr_IBUF)
+     FDC:CLR                   0.494          render_unit/debug_unit/sync_unit/v_sync_reg
+    ----------------------------------------
+    Total                      1.040ns (0.495ns logic, 0.545ns route)
+                                       (47.6% logic, 52.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'render_unit/debug_unit/div_unit/p_1'
+  Total number of paths / destination ports: 266 / 14
+-------------------------------------------------------------------------
+Offset:              3.604ns (Levels of Logic = 4)
+  Source:            render_unit/debug_unit/sync_unit/v_count_reg_2 (FF)
+  Destination:       red<3> (PAD)
+  Source Clock:      render_unit/debug_unit/div_unit/p_1 rising
+
+  Data Path: render_unit/debug_unit/sync_unit/v_count_reg_2 to red<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            18   0.478   1.031  render_unit/debug_unit/sync_unit/v_count_reg_2 (render_unit/debug_unit/sync_unit/v_count_reg_2)
+     LUT6:I1->O            1   0.124   0.716  render_unit/debug_unit/GND_3_o_pixel_y[9]_AND_105_o_SW0 (N2)
+     LUT6:I3->O           12   0.124   0.608  render_unit/debug_unit/GND_3_o_pixel_y[9]_AND_105_o (render_unit/debug_unit/GND_3_o_pixel_y[9]_AND_105_o)
+     LUT3:I1->O            1   0.124   0.399  render_unit/debug_unit/Mmux_blue11 (blue_0_OBUF)
+     OBUF:I->O                 0.000          blue_0_OBUF (blue<0>)
+    ----------------------------------------
+    Total                      3.604ns (0.850ns logic, 2.754ns route)
+                                       (23.6% logic, 76.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 384 / 12
+-------------------------------------------------------------------------
+Offset:              4.462ns (Levels of Logic = 6)
+  Source:            render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_1 (FF)
+  Destination:       red<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: render_unit/debug_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_1 to red<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q            144   0.478   1.116  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_1 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe<1>)
+     LUT6:I0->O            1   0.124   0.776  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_122 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_122)
+     LUT6:I2->O            1   0.124   0.776  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_7 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_7)
+     LUT6:I2->O            1   0.124   0.421  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe<5>1 (douta<0>)
+     end scope: 'render_unit/debug_unit/P1:douta<0>'
+     LUT3:I2->O            1   0.124   0.399  render_unit/debug_unit/Mmux_red11 (red_0_OBUF)
+     OBUF:I->O                 0.000          red_0_OBUF (red<0>)
+    ----------------------------------------
+    Total                      4.462ns (0.974ns logic, 3.488ns route)
+                                       (21.8% logic, 78.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+-----------------------------------+---------+---------+---------+---------+
+                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------+---------+---------+---------+---------+
+clk                                |    1.458|         |         |         |
+render_unit/debug_unit/div_unit/p_1|    8.501|         |         |         |
+-----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock render_unit/debug_unit/div_unit/p_1
+-----------------------------------+---------+---------+---------+---------+
+                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------+---------+---------+---------+---------+
+clk                                |    2.467|         |         |         |
+render_unit/debug_unit/div_unit/p_1|    3.398|         |         |         |
+-----------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 39.00 secs
+Total CPU time to Xst completion: 38.54 secs
+ 
+--> 
+
+Total memory usage is 476156 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

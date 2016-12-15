@@ -1,14 +1,14 @@
 ﻿  bmp2coe.c
-c:\users\fairy\documents\computer science\digital logic design\project\needforspeed\resource\coe\bmp2coe\bmp2coe\bmp2coe.c(24): warning C4018: '<': signed/unsigned mismatch
-c:\users\fairy\documents\computer science\digital logic design\project\needforspeed\resource\coe\bmp2coe\bmp2coe\bmp2coe.c(10): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\fairy\documents\computer science\digital logic design\project\blockyroads\resource\coe\bmp2coe\bmp2coe\bmp2coe.c(24): warning C4018: '<': signed/unsigned mismatch
+c:\users\fairy\documents\computer science\digital logic design\project\blockyroads\resource\coe\bmp2coe\bmp2coe\bmp2coe.c(10): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
-c:\users\fairy\documents\computer science\digital logic design\project\needforspeed\resource\coe\bmp2coe\bmp2coe\bmp2coe.c(21): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\fairy\documents\computer science\digital logic design\project\blockyroads\resource\coe\bmp2coe\bmp2coe\bmp2coe.c(21): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
-c:\users\fairy\documents\computer science\digital logic design\project\needforspeed\resource\coe\bmp2coe\bmp2coe\bmp2coe.c(66): warning C4018: '<': signed/unsigned mismatch
-c:\users\fairy\documents\computer science\digital logic design\project\needforspeed\resource\coe\bmp2coe\bmp2coe\bmp2coe.c(76): warning C4018: '<': signed/unsigned mismatch
-c:\users\fairy\documents\computer science\digital logic design\project\needforspeed\resource\coe\bmp2coe\bmp2coe\bmp2coe.c(49): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\fairy\documents\computer science\digital logic design\project\blockyroads\resource\coe\bmp2coe\bmp2coe\bmp2coe.c(66): warning C4018: '<': signed/unsigned mismatch
+c:\users\fairy\documents\computer science\digital logic design\project\blockyroads\resource\coe\bmp2coe\bmp2coe\bmp2coe.c(76): warning C4018: '<': signed/unsigned mismatch
+c:\users\fairy\documents\computer science\digital logic design\project\blockyroads\resource\coe\bmp2coe\bmp2coe\bmp2coe.c(49): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
-c:\users\fairy\documents\computer science\digital logic design\project\needforspeed\resource\coe\bmp2coe\bmp2coe\bmp2coe.c(61): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\users\fairy\documents\computer science\digital logic design\project\blockyroads\resource\coe\bmp2coe\bmp2coe\bmp2coe.c(61): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
-  bmp2coe.vcxproj -> C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\NeedForSpeed\resource\coe\bmp2coe\Debug\bmp2coe.exe
-  bmp2coe.vcxproj -> C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\NeedForSpeed\resource\coe\bmp2coe\Debug\bmp2coe.pdb (Full PDB)
+  bmp2coe.vcxproj -> C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\resource\coe\bmp2coe\Debug\bmp2coe.exe
+  bmp2coe.vcxproj -> C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\resource\coe\bmp2coe\Debug\bmp2coe.pdb (Full PDB)

@@ -1,0 +1,6 @@
+verilog work "vga_sync.v"
+verilog work "ipcore_dir/background.v"
+verilog work "clkdiv.v"
+verilog work "vga_test.v"
+verilog work "Renderer.v"
+verilog work "BR_Top.v"

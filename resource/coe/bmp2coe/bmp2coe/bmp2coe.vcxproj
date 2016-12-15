@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{9ACF8CE3-F775-4433-85AE-B8816C556980}</ProjectGuid>
+    <ProjectGuid>{F30DEF01-AFE0-4D08-BB83-1B3A4B5926E9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>bmp2coe</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>

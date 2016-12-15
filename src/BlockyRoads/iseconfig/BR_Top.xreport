@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-12-14T23:00:43</DateModified>
+  <DateModified>2016-12-15T18:42:18</DateModified>
   <ModuleName>BR_Top</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/iseconfig/BR_Top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads\</ImplementationReportsDirectory>
   <DateInitialized>2016-12-14T23:00:20</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -29,8 +29,8 @@ module vga_test(
 	wire video_on;
 	wire [9:0] pixel_x, pixel_y;
 	wire [9:0] x, y;
-	wire [14:0] back_addr;
-	wire [15:0] back_data;
+	wire [18:0] back_addr;
+	wire [11:0] back_data;
 	
 	// instantiate vga_sync circuit
 	clkdiv div_unit ( .clk(clk), .clr(clr), .clk25m(clk25m) );
@@ -39,37 +39,28 @@ module vga_test(
 	);
 	
 	// instantiate bmp's pixel data
-	background B1 (.clka(clk), .addra(back_addr), .douta(back_data));
+	background P1 (.clka(clk), .addra(back_addr), .douta(back_data));
 	
 	// render the test bmp
-	assign x = pixel_x - 240;
-	assign y = pixel_y - 180;
-	assign back_addr = (120 - y) * 160 + x;
+	assign x = pixel_x;
+	assign y = pixel_y - 84;
+	assign back_addr = y * 640 + x;
 	
 	always @*
 	begin
 		if(video_on)
 		begin
-			if( (pixel_x > 239) && (pixel_x < 400) )
+			if( (pixel_y >= 84) && (pixel_y < 445) )
 			begin
-				if( (pixel_y > 179) && (pixel_y < 300) )
-				begin
-					red   <= back_data[ 3: 0];
-					green <= back_data[ 7: 4];
-					blue  <= back_data[11: 8];
-				end
-				else
-				begin
-					red   <= 4'b0;
-					green <= 4'b1000;
-					blue  <= 4'b1111;
-				end
+				red   <= back_data[ 3: 0];
+				green <= back_data[ 7: 4];
+				blue  <= back_data[11: 8];
 			end
 			else
 			begin
 				red   <= 4'b0;
-				green <= 4'b1000;
-				blue  <= 4'b1111;
+				green <= 4'b0;
+				blue  <= 4'b0;
 			end
 		end
 		else
