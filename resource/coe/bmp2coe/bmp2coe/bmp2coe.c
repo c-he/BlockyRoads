@@ -85,7 +85,7 @@ int loadBitmapBW(const char *fileIn, const char *fileOut) // 0 for black 1 for w
 
 int main(void)
 {
-	loadBitmapBW("background.bmp", "background.coe");
+	loadBitmapBW("startBtn.bmp", "startBtn.coe");
 	
-	return 0;
+	//return 0;
 }

@@ -24,17 +24,17 @@ module clkdiv(
 	output wire clk25m
 	);
 	
-	reg [2:0] p;	// registers to generate 25MHz pulse
+	reg [ 2:0] p;		// registers to generate 25MHz pulse
 	
 	initial begin
-		p <= 0;
+		p <= 3'b0;
 	end
 	
-	always @ (posedge clk)
+	always @ (posedge clk or posedge clr)
 	begin
-		if (clr)
+		if (clr == 1)
 		begin
-			p <= 0;
+			p <= 3'b0;
 		end
 		else
 		begin

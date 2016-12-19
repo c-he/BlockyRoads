@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj BlockyRoads -o "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/Model.tfi" -lib work "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads//Model.v" -module Model -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

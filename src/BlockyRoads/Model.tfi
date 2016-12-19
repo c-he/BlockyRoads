@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+Model instance_name (
+    .clk(clk), 
+    .clr(clr), 
+    .ps2c(ps2c), 
+    .ps2d(ps2d), 
+    .a_to_g(a_to_g), 
+    .dp(dp), 
+    .an(an)
+    );
+
+

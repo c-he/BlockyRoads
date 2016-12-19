@@ -20,11 +20,14 @@
 //////////////////////////////////////////////////////////////////////////////////
 module BR_Top(
     input wire clk, clr,
+	input wire ps2c, ps2d,
 	output wire hsync, vsync,
-	output wire [3:0] red, green, blue
+	output wire [3:0] red, green, blue,
+	output wire [7:0] an,
+	output wire [7:0] segment
 	);
 	
-	Renderer render_unit( . clk(clk), .clr(clr), .hsync(hsync), .vsync(vsync), .red(red), .green(green), .blue(blue) );
-
+	Renderer render_unit(.clk(clk), .clr(clr), .hsync(hsync), .vsync(vsync), .red(red), .green(green), .blue(blue) );
+	Model model_unit(.clk(clk), .clr(clr), .ps2c(ps2c), .ps2d(ps2d), .segment(segment), .an(an));
 
 endmodule
