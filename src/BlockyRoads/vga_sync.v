@@ -92,6 +92,6 @@ module vga_sync(
 			vsync = 0;
 	end
 
-	assign video_on = (hc <= hfp) && (hc > hbp) && (vc <= vfp) && (vc > vbp);
+	assign video_on = (hc < hfp) && (hc > hbp) && (vc < vfp) && (vc > vbp);
 
 endmodule

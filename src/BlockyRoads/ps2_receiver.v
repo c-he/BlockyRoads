@@ -72,5 +72,5 @@ module ps2_receiver(
 			shift2 <= {shift1[0], shift2[10:1]};
 		end
 	end
-		
+
 endmodule
