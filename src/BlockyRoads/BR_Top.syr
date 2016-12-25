@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.36 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.37 secs
  
 --> Reading design: BR_Top.prj
 
@@ -116,6 +116,8 @@ Analyzing Verilog file "C:\Users\fairy\Documents\Computer Science\Digital Logic 
 Parsing module <ps2_receiver>.
 Analyzing Verilog file "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\ipcore_dir\startBtn.v" into library work
 Parsing module <startBtn>.
+Analyzing Verilog file "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\ipcore_dir\road.v" into library work
+Parsing module <road>.
 Analyzing Verilog file "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\ipcore_dir\background.v" into library work
 Parsing module <background>.
 Analyzing Verilog file "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\clkdiv.v" into library work
@@ -136,7 +138,6 @@ Elaborating module <BR_Top>.
 Elaborating module <Renderer>.
 
 Elaborating module <clkdiv>.
-WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\clkdiv.v" Line 41: Result of 4-bit expression is truncated to fit in 3-bit target.
 
 Elaborating module <vga_sync>.
 WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\vga_sync.v" Line 37: Result of 32-bit expression is truncated to fit in 10-bit target.
@@ -149,12 +150,16 @@ WARNING:HDLCompiler:1499 - "C:\Users\fairy\Documents\Computer Science\Digital Lo
 
 Elaborating module <startBtn>.
 WARNING:HDLCompiler:1499 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\ipcore_dir\startBtn.v" Line 39: Empty module <startBtn> remains a black box.
-WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 62: Result of 32-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 63: Result of 21-bit expression is truncated to fit in 18-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 64: Result of 32-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 65: Result of 32-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 66: Result of 20-bit expression is truncated to fit in 15-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 68: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <road>.
+WARNING:HDLCompiler:1499 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\ipcore_dir\road.v" Line 39: Empty module <road> remains a black box.
+WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 67: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 70: Result of 21-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 73: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 74: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 77: Result of 20-bit expression is truncated to fit in 13-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 84: Result of 21-bit expression is truncated to fit in 17-bit target.
+WARNING:HDLCompiler:1016 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Model.v" Line 51: Port clk100 is not connected to this instance
 
 Elaborating module <Model>.
 
@@ -175,42 +180,65 @@ Unit <BR_Top> synthesized.
 
 Synthesizing Unit <Renderer>.
     Related source file is "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v".
-    Found 20-bit adder for signal <n0046> created at line 63.
-    Found 19-bit adder for signal <n0047> created at line 66.
+WARNING:Xst:647 - Input <direction> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <scroll>.
+    Found 11-bit subtractor for signal <n0075> created at line 73.
+    Found 11-bit subtractor for signal <n0076> created at line 74.
+    Found 32-bit subtractor for signal <scroll[31]_GND_2_o_sub_27_OUT> created at line 90.
+    Found 20-bit adder for signal <n0085> created at line 70.
+    Found 19-bit adder for signal <n0086> created at line 77.
+    Found 32-bit adder for signal <GND_2_o_scroll[31]_add_21_OUT> created at line 83.
+    Found 20-bit adder for signal <n0087> created at line 84.
     Found 10-bit subtractor for signal <back_y> created at line 38.
-    Found 10-bit subtractor for signal <n0044[9:0]> created at line 66.
-    Found 10-bit subtractor for signal <btn_y> created at line 38.
-    Found 10x10-bit multiplier for signal <n0068> created at line 63.
-    Found 10x9-bit multiplier for signal <n0071> created at line 66.
-    Found 10-bit comparator lessequal for signal <n0008> created at line 67
-    Found 10-bit comparator greater for signal <pixel_x[9]_PWR_2_o_LessThan_10_o> created at line 67
-    Found 10-bit comparator lessequal for signal <n0012> created at line 67
-    Found 10-bit comparator lessequal for signal <n0018> created at line 69
-    Found 10-bit comparator greater for signal <pixel_y[9]_GND_2_o_LessThan_16_o> created at line 69
+    Found 11x9-bit multiplier for signal <n0133> created at line 70.
+    Found 11x8-bit multiplier for signal <n0136> created at line 77.
+    Found 11x9-bit multiplier for signal <n0142> created at line 84.
+    Found 4-bit 3-to-1 multiplexer for signal <_n0162> created at line 103.
+    Found 4-bit 3-to-1 multiplexer for signal <_n0176> created at line 103.
+    Found 4-bit 3-to-1 multiplexer for signal <_n0190> created at line 103.
+WARNING:Xst:737 - Found 1-bit latch for signal <red<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <red<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <red<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <red<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <green<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <green<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <green<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <green<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <blue<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <blue<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <blue<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <blue<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 10-bit comparator lessequal for signal <n0006> created at line 71
+    Found 10-bit comparator greater for signal <pixel_y[9]_GND_2_o_LessThan_8_o> created at line 71
+    Found 10-bit comparator greater for signal <GND_2_o_pixel_x[9]_LessThan_15_o> created at line 78
+    Found 10-bit comparator lessequal for signal <n0017> created at line 78
+    Found 10-bit comparator lessequal for signal <n0020> created at line 78
     Summary:
-	inferred   2 Multiplier(s).
-	inferred   5 Adder/Subtractor(s).
+	inferred   3 Multiplier(s).
+	inferred   8 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred  12 Latch(s).
 	inferred   5 Comparator(s).
-	inferred  12 Multiplexer(s).
+	inferred  15 Multiplexer(s).
 Unit <Renderer> synthesized.
 
 Synthesizing Unit <clkdiv>.
     Related source file is "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\clkdiv.v".
-    Found 3-bit register for signal <p>.
-    Found 3-bit adder for signal <p[2]_GND_3_o_add_1_OUT> created at line 41.
+    Found 32-bit register for signal <cnt>.
+    Found 32-bit adder for signal <cnt[31]_GND_3_o_add_1_OUT> created at line 42.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred   3 D-type flip-flop(s).
+	inferred  32 D-type flip-flop(s).
 Unit <clkdiv> synthesized.
 
 Synthesizing Unit <vga_sync>.
     Related source file is "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\vga_sync.v".
         hpixels = 800
         vlines = 525
-        hbp = 143
-        hfp = 783
-        vbp = 31
-        vfp = 519
+        hbp = 144
+        hfp = 784
+        vbp = 35
+        vfp = 515
     Found 10-bit register for signal <vc>.
     Found 10-bit register for signal <hc>.
     Found 11-bit subtractor for signal <GND_4_o_GND_4_o_sub_1_OUT> created at line 37.
@@ -232,10 +260,89 @@ Synthesizing Unit <vga_sync>.
 	inferred   2 Multiplexer(s).
 Unit <vga_sync> synthesized.
 
+Synthesizing Unit <mod_32u_9u>.
+    Related source file is "".
+    Found 41-bit adder for signal <GND_10_o_b[8]_add_1_OUT> created at line 0.
+    Found 40-bit adder for signal <GND_10_o_b[8]_add_3_OUT> created at line 0.
+    Found 39-bit adder for signal <GND_10_o_b[8]_add_5_OUT> created at line 0.
+    Found 38-bit adder for signal <GND_10_o_b[8]_add_7_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_10_o_b[8]_add_9_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_10_o_b[8]_add_11_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_10_o_b[8]_add_13_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_10_o_b[8]_add_15_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_10_o_b[8]_add_17_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[8]_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_59_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_61_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_63_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_10_o_add_65_OUT> created at line 0.
+    Found 41-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 40-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 39-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  33 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 1025 Multiplexer(s).
+Unit <mod_32u_9u> synthesized.
+
 Synthesizing Unit <Model>.
     Related source file is "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Model.v".
+INFO:Xst:3210 - "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Model.v" line 51: Output port <clk100> of the instance <div_key> is unconnected or connected to loadless signal.
+    Found 4-bit register for signal <direction>.
+    Found 1-bit register for signal <flag>.
+    Found 4-bit register for signal <status>.
     Summary:
-	no macro.
+	inferred   9 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
 Unit <Model> synthesized.
 
 Synthesizing Unit <ps2_receiver>.
@@ -253,9 +360,9 @@ Unit <ps2_receiver> synthesized.
 Synthesizing Unit <x7segbc>.
     Related source file is "C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\x7segbc.v".
     Found 20-bit register for signal <clkdiv>.
-    Found 20-bit adder for signal <clkdiv[19]_GND_12_o_add_16_OUT> created at line 118.
+    Found 20-bit adder for signal <clkdiv[19]_GND_26_o_add_16_OUT> created at line 118.
     Found 16x7-bit Read Only RAM for signal <a_to_g>
-    Found 1-bit 8-to-1 multiplexer for signal <GND_12_o_GND_12_o_equal_5_o> created at line 108.
+    Found 1-bit 8-to-1 multiplexer for signal <GND_26_o_GND_26_o_equal_5_o> created at line 108.
     Found 1-bit 8-to-1 multiplexer for signal <digit<3>> created at line 84.
     Found 1-bit 8-to-1 multiplexer for signal <digit<2>> created at line 84.
     Found 1-bit 8-to-1 multiplexer for signal <digit<1>> created at line 84.
@@ -273,31 +380,57 @@ HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  16x7-bit single-port Read Only RAM                    : 1
-# Multipliers                                          : 2
- 10x10-bit multiplier                                  : 1
- 10x9-bit multiplier                                   : 1
-# Adders/Subtractors                                   : 14
+# Multipliers                                          : 3
+ 11x8-bit multiplier                                   : 1
+ 11x9-bit multiplier                                   : 2
+# Adders/Subtractors                                   : 50
  10-bit adder                                          : 2
- 10-bit subtractor                                     : 5
- 11-bit subtractor                                     : 2
+ 10-bit subtractor                                     : 3
+ 11-bit subtractor                                     : 4
  19-bit adder                                          : 1
- 20-bit adder                                          : 2
- 3-bit adder                                           : 2
-# Registers                                            : 11
- 1-bit register                                        : 2
+ 20-bit adder                                          : 3
+ 32-bit adder                                          : 27
+ 32-bit subtractor                                     : 1
+ 33-bit adder                                          : 1
+ 34-bit adder                                          : 1
+ 35-bit adder                                          : 1
+ 36-bit adder                                          : 1
+ 37-bit adder                                          : 1
+ 38-bit adder                                          : 1
+ 39-bit adder                                          : 1
+ 40-bit adder                                          : 1
+ 41-bit adder                                          : 1
+# Registers                                            : 15
+ 1-bit register                                        : 3
  10-bit register                                       : 3
  11-bit register                                       : 1
  20-bit register                                       : 1
- 3-bit register                                        : 2
+ 32-bit register                                       : 3
+ 4-bit register                                        : 2
  8-bit register                                        : 2
-# Comparators                                          : 11
+# Latches                                              : 12
+ 1-bit latch                                           : 12
+# Comparators                                          : 44
  10-bit comparator greater                             : 6
  10-bit comparator lessequal                           : 5
-# Multiplexers                                         : 20
+ 32-bit comparator lessequal                           : 24
+ 33-bit comparator lessequal                           : 1
+ 34-bit comparator lessequal                           : 1
+ 35-bit comparator lessequal                           : 1
+ 36-bit comparator lessequal                           : 1
+ 37-bit comparator lessequal                           : 1
+ 38-bit comparator lessequal                           : 1
+ 39-bit comparator lessequal                           : 1
+ 40-bit comparator lessequal                           : 1
+ 41-bit comparator lessequal                           : 1
+# Multiplexers                                         : 1051
+ 1-bit 2-to-1 multiplexer                              : 1024
  1-bit 8-to-1 multiplexer                              : 5
  10-bit 2-to-1 multiplexer                             : 2
- 4-bit 2-to-1 multiplexer                              : 12
+ 4-bit 2-to-1 multiplexer                              : 15
+ 4-bit 3-to-1 multiplexer                              : 3
  8-bit 2-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 1
 
 =========================================================================
 
@@ -307,16 +440,22 @@ Macro Statistics
 
 Reading core <ipcore_dir/background.ngc>.
 Reading core <ipcore_dir/startBtn.ngc>.
+Reading core <ipcore_dir/road.ngc>.
 Loading core <background> for timing and area information for instance <P1>.
 Loading core <startBtn> for timing and area information for instance <P2>.
+Loading core <road> for timing and area information for instance <P3>.
+WARNING:Xst:1710 - FF/Latch <status_0> (without init value) has a constant value of 0 in block <model_unit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <status_1> (without init value) has a constant value of 0 in block <model_unit>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <Renderer>.
-	Multiplier <Mmult_n0068> in block <Renderer> and adder/subtractor <Madd_n0046_Madd> in block <Renderer> are combined into a MAC<Maddsub_n0068>.
-	Multiplier <Mmult_n0071> in block <Renderer> and adder/subtractor <Madd_n0047_Madd> in block <Renderer> are combined into a MAC<Maddsub_n0071>.
+The following registers are absorbed into counter <scroll>: 1 register on signal <scroll>.
+	Multiplier <Mmult_n0142> in block <Renderer> and adder/subtractor <Madd_n0087_Madd> in block <Renderer> are combined into a MAC<Maddsub_n0142>.
+	Multiplier <Mmult_n0133> in block <Renderer> and adder/subtractor <Madd_n0085_Madd> in block <Renderer> are combined into a MAC<Maddsub_n0133>.
+	Multiplier <Mmult_n0136> in block <Renderer> and adder/subtractor <Madd_n0086_Madd> in block <Renderer> are combined into a MAC<Maddsub_n0136>.
 Unit <Renderer> synthesized (advanced).
 
 Synthesizing (advanced) Unit <clkdiv>.
-The following registers are absorbed into counter <p>: 1 register on signal <p>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
 Unit <clkdiv> synthesized (advanced).
 
 Synthesizing (advanced) Unit <vga_sync>.
@@ -345,47 +484,131 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # RAMs                                                 : 1
  16x7-bit single-port distributed Read Only RAM        : 1
-# MACs                                                 : 2
- 10x10-to-18-bit MAC                                   : 1
- 10x9-to-15-bit MAC                                    : 1
-# Adders/Subtractors                                   : 5
+# MACs                                                 : 3
+ 10x8-to-13-bit MAC                                    : 1
+ 10x9-to-16-bit MAC                                    : 1
+ 10x9-to-17-bit MAC                                    : 1
+# Adders/Subtractors                                   : 39
  10-bit subtractor                                     : 3
  10-bit subtractor borrow in                           : 2
-# Counters                                             : 5
+ 32-bit adder                                          : 33
+ 9-bit adder                                           : 1
+# Counters                                             : 6
  10-bit up counter                                     : 2
  20-bit up counter                                     : 1
- 3-bit up counter                                      : 2
-# Registers                                            : 39
- Flip-Flops                                            : 39
-# Comparators                                          : 11
+ 32-bit down counter                                   : 1
+ 32-bit up counter                                     : 2
+# Registers                                            : 48
+ Flip-Flops                                            : 48
+# Comparators                                          : 44
  10-bit comparator greater                             : 6
  10-bit comparator lessequal                           : 5
-# Multiplexers                                         : 18
+ 32-bit comparator lessequal                           : 24
+ 33-bit comparator lessequal                           : 1
+ 34-bit comparator lessequal                           : 1
+ 35-bit comparator lessequal                           : 1
+ 36-bit comparator lessequal                           : 1
+ 37-bit comparator lessequal                           : 1
+ 38-bit comparator lessequal                           : 1
+ 39-bit comparator lessequal                           : 1
+ 40-bit comparator lessequal                           : 1
+ 41-bit comparator lessequal                           : 1
+# Multiplexers                                         : 1049
+ 1-bit 2-to-1 multiplexer                              : 1024
  1-bit 8-to-1 multiplexer                              : 5
- 4-bit 2-to-1 multiplexer                              : 12
+ 4-bit 2-to-1 multiplexer                              : 15
+ 4-bit 3-to-1 multiplexer                              : 3
  8-bit 2-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2677 - Node <div_unit/p_2> of sequential type is unconnected in block <Renderer>.
-WARNING:Xst:2677 - Node <model_unit/div_key/p_2> of sequential type is unconnected in block <BR_Top>.
+WARNING:Xst:1710 - FF/Latch <status_0> (without init value) has a constant value of 0 in block <Model>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <status_1> (without init value) has a constant value of 0 in block <Model>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <div_unit/cnt_20> of sequential type is unconnected in block <Renderer>.
+WARNING:Xst:2677 - Node <div_unit/cnt_21> of sequential type is unconnected in block <Renderer>.
+WARNING:Xst:2677 - Node <div_unit/cnt_22> of sequential type is unconnected in block <Renderer>.
+WARNING:Xst:2677 - Node <div_unit/cnt_23> of sequential type is unconnected in block <Renderer>.
+WARNING:Xst:2677 - Node <div_unit/cnt_24> of sequential type is unconnected in block <Renderer>.
+WARNING:Xst:2677 - Node <div_unit/cnt_25> of sequential type is unconnected in block <Renderer>.
+WARNING:Xst:2677 - Node <div_unit/cnt_26> of sequential type is unconnected in block <Renderer>.
+WARNING:Xst:2677 - Node <div_unit/cnt_27> of sequential type is unconnected in block <Renderer>.
+WARNING:Xst:2677 - Node <div_unit/cnt_28> of sequential type is unconnected in block <Renderer>.
+WARNING:Xst:2677 - Node <div_unit/cnt_29> of sequential type is unconnected in block <Renderer>.
+WARNING:Xst:2677 - Node <div_unit/cnt_30> of sequential type is unconnected in block <Renderer>.
+WARNING:Xst:2677 - Node <div_unit/cnt_31> of sequential type is unconnected in block <Renderer>.
+WARNING:Xst:2677 - Node <div_key/cnt_2> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_3> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_4> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_5> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_6> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_7> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_8> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_9> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_10> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_11> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_12> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_13> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_14> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_15> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_16> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_17> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_18> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_19> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_20> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_21> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_22> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_23> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_24> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_25> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_26> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_27> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_28> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_29> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_30> of sequential type is unconnected in block <Model>.
+WARNING:Xst:2677 - Node <div_key/cnt_31> of sequential type is unconnected in block <Model>.
 
 Optimizing unit <BR_Top> ...
 
 Optimizing unit <Renderer> ...
 
+Optimizing unit <Model> ...
+
 Optimizing unit <x7segbc> ...
 
 Optimizing unit <ps2_receiver> ...
-INFO:Xst:2261 - The FF/Latch <model_unit/div_key/p_0> in Unit <BR_Top> is equivalent to the following 2 FFs/Latches, which will be removed : <render_unit/div_unit/p_0> <model_unit/seg_disp/clkdiv_0> 
-INFO:Xst:2261 - The FF/Latch <model_unit/div_key/p_1> in Unit <BR_Top> is equivalent to the following 2 FFs/Latches, which will be removed : <render_unit/div_unit/p_1> <model_unit/seg_disp/clkdiv_1> 
+WARNING:Xst:2677 - Node <model_unit/direction_3> of sequential type is unconnected in block <BR_Top>.
+WARNING:Xst:2677 - Node <model_unit/direction_2> of sequential type is unconnected in block <BR_Top>.
+WARNING:Xst:2677 - Node <model_unit/direction_1> of sequential type is unconnected in block <BR_Top>.
+WARNING:Xst:2677 - Node <model_unit/direction_0> of sequential type is unconnected in block <BR_Top>.
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_10> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/seg_disp/clkdiv_10> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_11> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/seg_disp/clkdiv_11> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_12> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/seg_disp/clkdiv_12> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_13> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/seg_disp/clkdiv_13> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_14> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/seg_disp/clkdiv_14> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_15> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/seg_disp/clkdiv_15> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_16> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/seg_disp/clkdiv_16> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_17> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/seg_disp/clkdiv_17> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_18> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/seg_disp/clkdiv_18> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_19> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/seg_disp/clkdiv_19> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_0> in Unit <BR_Top> is equivalent to the following 2 FFs/Latches, which will be removed : <model_unit/div_key/cnt_0> <model_unit/seg_disp/clkdiv_0> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_1> in Unit <BR_Top> is equivalent to the following 2 FFs/Latches, which will be removed : <model_unit/div_key/cnt_1> <model_unit/seg_disp/clkdiv_1> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_2> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/seg_disp/clkdiv_2> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_3> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/seg_disp/clkdiv_3> 
+INFO:Xst:2261 - The FF/Latch <model_unit/status_2> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/flag> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_4> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/seg_disp/clkdiv_4> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_5> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/seg_disp/clkdiv_5> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_6> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/seg_disp/clkdiv_6> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_7> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/seg_disp/clkdiv_7> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_8> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/seg_disp/clkdiv_8> 
+INFO:Xst:2261 - The FF/Latch <render_unit/div_unit/cnt_9> in Unit <BR_Top> is equivalent to the following FF/Latch, which will be removed : <model_unit/seg_disp/clkdiv_9> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block BR_Top, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block BR_Top, actual ratio is 2.
 
 Final Macro Processing ...
 
@@ -397,8 +620,8 @@ Unit <BR_Top> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 75
- Flip-Flops                                            : 75
+# Registers                                            : 109
+ Flip-Flops                                            : 109
 # Shift Registers                                      : 1
  4-bit shift register                                  : 1
 
@@ -423,37 +646,39 @@ Top Level Output File Name         : BR_Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 620
-#      GND                         : 3
-#      INV                         : 3
-#      LUT1                        : 38
-#      LUT2                        : 22
-#      LUT3                        : 29
-#      LUT4                        : 24
-#      LUT5                        : 13
-#      LUT6                        : 337
-#      MUXCY                       : 68
-#      MUXF7                       : 9
-#      VCC                         : 3
-#      XORCY                       : 71
-# FlipFlops/Latches                : 89
+# BELS                             : 2650
+#      GND                         : 4
+#      INV                         : 55
+#      LUT1                        : 66
+#      LUT2                        : 29
+#      LUT3                        : 278
+#      LUT4                        : 86
+#      LUT5                        : 556
+#      LUT6                        : 436
+#      MUXCY                       : 578
+#      MUXF7                       : 3
+#      VCC                         : 4
+#      XORCY                       : 555
+# FlipFlops/Latches                : 137
+#      FD                          : 32
 #      FDC                         : 46
 #      FDC_1                       : 17
 #      FDCE                        : 14
-#      FDE                         : 10
+#      FDE                         : 12
 #      FDPE                        : 2
-# RAMS                             : 99
-#      RAMB36E1                    : 99
+#      FDRE                        : 2
+#      LDC                         : 12
+# RAMS                             : 60
+#      RAMB18E1                    : 4
+#      RAMB36E1                    : 56
 # Shift Registers                  : 1
 #      SRLC16E                     : 1
-# Clock Buffers                    : 3
-#      BUFG                        : 2
+# Clock Buffers                    : 4
+#      BUFG                        : 3
 #      BUFGP                       : 1
 # IO Buffers                       : 33
 #      IBUF                        : 3
 #      OBUF                        : 30
-# DSPs                             : 2
-#      DSP48E1                     : 2
 
 Device utilization summary:
 ---------------------------
@@ -462,28 +687,28 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              89  out of  126800     0%  
- Number of Slice LUTs:                  467  out of  63400     0%  
-    Number used as Logic:               466  out of  63400     0%  
+ Number of Slice Registers:             125  out of  126800     0%  
+ Number of Slice LUTs:                 1507  out of  63400     2%  
+    Number used as Logic:              1506  out of  63400     2%  
     Number used as Memory:                1  out of  19000     0%  
        Number used as SRL:                1
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    496
-   Number with an unused Flip Flop:     407  out of    496    82%  
-   Number with an unused LUT:            29  out of    496     5%  
-   Number of fully used LUT-FF pairs:    60  out of    496    12%  
-   Number of unique control sets:        10
+ Number of LUT Flip Flop pairs used:   1540
+   Number with an unused Flip Flop:    1415  out of   1540    91%  
+   Number with an unused LUT:            33  out of   1540     2%  
+   Number of fully used LUT-FF pairs:    92  out of   1540     5%  
+   Number of unique control sets:        14
 
 IO Utilization: 
  Number of IOs:                          34
  Number of bonded IOBs:                  34  out of    210    16%  
+    IOB Flip Flops/Latches:              12
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:               99  out of    135    73%  
-    Number using Block RAM only:         99
- Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
- Number of DSP48E1s:                      2  out of    240     0%  
+ Number of Block RAM/FIFO:               58  out of    135    42%  
+    Number using Block RAM only:         58
+ Number of BUFG/BUFGCTRLs:                4  out of     32    12%  
 
 ---------------------------
 Partition Resource Summary:
@@ -503,54 +728,49 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 128   |
-model_unit/div_key/p_1             | BUFG                   | 38    |
-model_unit/keyboard/PS2Cf          | BUFG                   | 23    |
------------------------------------+------------------------+-------+
+--------------------------------------+----------------------------+-------+
+Clock Signal                          | Clock buffer(FF name)      | Load  |
+--------------------------------------+----------------------------+-------+
+render_unit/div_unit/cnt_1            | BUFG                       | 40    |
+render_unit/div_unit/cnt_19           | BUFG                       | 32    |
+clk                                   | BUFGP                      | 91    |
+render_unit/_n0150(render_unit/out1:O)| NONE(*)(render_unit/blue_0)| 12    |
+model_unit/keyboard/PS2Cf             | BUFG                       | 23    |
+--------------------------------------+----------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                                                                                                                                                                 | Buffer(FF name)                                                                                                                                          | Load  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-render_unit/P1/N1(render_unit/P1/XST_GND:G)                                                                                                                                                                                                                                                    | NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[21].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)    | 152   |
-render_unit/P2/N1(render_unit/P2/XST_GND:G)                                                                                                                                                                                                                                                    | NONE(render_unit/P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)     | 22    |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[64].ram.r/v6_init.ram/cascadelata_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[64].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[64].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[64].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[64].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[64].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[65].ram.r/v6_init.ram/cascadelata_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[65].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[65].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[65].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[65].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[65].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[66].ram.r/v6_init.ram/cascadelata_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[66].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[66].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[66].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[66].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[66].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[67].ram.r/v6_init.ram/cascadelata_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[67].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[67].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[67].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[67].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[67].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[68].ram.r/v6_init.ram/cascadelata_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[68].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[68].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[68].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[68].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[68].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[69].ram.r/v6_init.ram/cascadelata_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[69].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[69].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[69].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[69].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[69].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[70].ram.r/v6_init.ram/cascadelata_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[70].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[70].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[70].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[70].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[70].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[71].ram.r/v6_init.ram/cascadelata_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[71].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[71].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[71].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[71].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[71].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[72].ram.r/v6_init.ram/cascadelata_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[72].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[72].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[72].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[72].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[72].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[73].ram.r/v6_init.ram/cascadelata_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[73].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[73].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[73].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[73].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[73].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[74].ram.r/v6_init.ram/cascadelata_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[74].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[74].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[74].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[74].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[74].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[75].ram.r/v6_init.ram/cascadelata_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[75].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[75].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
-render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[75].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[75].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[75].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/P3/N1(render_unit/P3/XST_GND:G)                                                                                                                                                                                                                                                    | NONE(render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[25].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)    | 60    |
+render_unit/P1/N1(render_unit/P1/XST_GND:G)                                                                                                                                                                                                                                                    | NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)    | 34    |
+render_unit/P2/N1(render_unit/P2/XST_GND:G)                                                                                                                                                                                                                                                    | NONE(render_unit/P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)     | 6     |
+render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/cascadelata_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_init.ram/cascadelata_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/v6_init.ram/cascadelata_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(render_unit/P1/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/cascadelata_tmp(render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/cascadelata_tmp(render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/cascadelata_tmp(render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
+render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/cascadelatb_tmp(render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(render_unit/P3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 3.336ns (Maximum Frequency: 299.760MHz)
-   Minimum input arrival time before clock: 1.057ns
-   Maximum output required time after clock: 5.995ns
+   Minimum period: 3.424ns (Maximum Frequency: 292.056MHz)
+   Minimum input arrival time before clock: 1.253ns
+   Maximum output required time after clock: 3.778ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -558,65 +778,23 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 2.568ns (frequency: 389.484MHz)
-  Total number of paths / destination ports: 210 / 20
+Timing constraint: Default period analysis for Clock 'render_unit/div_unit/cnt_1'
+  Clock period: 3.424ns (frequency: 292.056MHz)
+  Total number of paths / destination ports: 1153 / 54
 -------------------------------------------------------------------------
-Delay:               2.568ns (Levels of Logic = 21)
-  Source:            model_unit/div_key/p_0 (FF)
-  Destination:       model_unit/seg_disp/clkdiv_19 (FF)
-  Source Clock:      clk rising
-  Destination Clock: clk rising
-
-  Data Path: model_unit/div_key/p_0 to model_unit/seg_disp/clkdiv_19
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              2   0.478   0.405  model_unit/div_key/p_0 (model_unit/div_key/p_0)
-     INV:I->O              2   0.146   0.000  model_unit/seg_disp/Mcount_clkdiv_lut<0>_INV_0 (Result<0>)
-     MUXCY:S->O            1   0.472   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<0> (model_unit/seg_disp/Mcount_clkdiv_cy<0>)
-     MUXCY:CI->O           1   0.029   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<1> (model_unit/seg_disp/Mcount_clkdiv_cy<1>)
-     MUXCY:CI->O           1   0.029   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<2> (model_unit/seg_disp/Mcount_clkdiv_cy<2>)
-     MUXCY:CI->O           1   0.029   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<3> (model_unit/seg_disp/Mcount_clkdiv_cy<3>)
-     MUXCY:CI->O           1   0.029   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<4> (model_unit/seg_disp/Mcount_clkdiv_cy<4>)
-     MUXCY:CI->O           1   0.029   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<5> (model_unit/seg_disp/Mcount_clkdiv_cy<5>)
-     MUXCY:CI->O           1   0.029   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<6> (model_unit/seg_disp/Mcount_clkdiv_cy<6>)
-     MUXCY:CI->O           1   0.029   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<7> (model_unit/seg_disp/Mcount_clkdiv_cy<7>)
-     MUXCY:CI->O           1   0.029   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<8> (model_unit/seg_disp/Mcount_clkdiv_cy<8>)
-     MUXCY:CI->O           1   0.029   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<9> (model_unit/seg_disp/Mcount_clkdiv_cy<9>)
-     MUXCY:CI->O           1   0.029   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<10> (model_unit/seg_disp/Mcount_clkdiv_cy<10>)
-     MUXCY:CI->O           1   0.029   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<11> (model_unit/seg_disp/Mcount_clkdiv_cy<11>)
-     MUXCY:CI->O           1   0.029   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<12> (model_unit/seg_disp/Mcount_clkdiv_cy<12>)
-     MUXCY:CI->O           1   0.029   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<13> (model_unit/seg_disp/Mcount_clkdiv_cy<13>)
-     MUXCY:CI->O           1   0.029   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<14> (model_unit/seg_disp/Mcount_clkdiv_cy<14>)
-     MUXCY:CI->O           1   0.029   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<15> (model_unit/seg_disp/Mcount_clkdiv_cy<15>)
-     MUXCY:CI->O           1   0.029   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<16> (model_unit/seg_disp/Mcount_clkdiv_cy<16>)
-     MUXCY:CI->O           1   0.029   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<17> (model_unit/seg_disp/Mcount_clkdiv_cy<17>)
-     MUXCY:CI->O           0   0.029   0.000  model_unit/seg_disp/Mcount_clkdiv_cy<18> (model_unit/seg_disp/Mcount_clkdiv_cy<18>)
-     XORCY:CI->O           1   0.510   0.000  model_unit/seg_disp/Mcount_clkdiv_xor<19> (model_unit/seg_disp/Result<19>)
-     FDC:D                     0.030          model_unit/seg_disp/clkdiv_19
-    ----------------------------------------
-    Total                      2.568ns (2.163ns logic, 0.405ns route)
-                                       (84.2% logic, 15.8% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'model_unit/div_key/p_1'
-  Clock period: 3.336ns (frequency: 299.760MHz)
-  Total number of paths / destination ports: 1103 / 48
--------------------------------------------------------------------------
-Delay:               3.336ns (Levels of Logic = 12)
-  Source:            render_unit/sync_unit/hc_9 (FF)
+Delay:               3.424ns (Levels of Logic = 12)
+  Source:            render_unit/sync_unit/hc_5 (FF)
   Destination:       render_unit/sync_unit/hc_9 (FF)
-  Source Clock:      model_unit/div_key/p_1 rising
-  Destination Clock: model_unit/div_key/p_1 rising
+  Source Clock:      render_unit/div_unit/cnt_1 rising
+  Destination Clock: render_unit/div_unit/cnt_1 rising
 
-  Data Path: render_unit/sync_unit/hc_9 to render_unit/sync_unit/hc_9
+  Data Path: render_unit/sync_unit/hc_5 to render_unit/sync_unit/hc_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              9   0.478   0.769  render_unit/sync_unit/hc_9 (render_unit/sync_unit/hc_9)
-     LUT3:I0->O           10   0.124   0.595  render_unit/sync_unit/GND_4_o_GND_4_o_equal_12_o<9>_SW0 (N7)
-     LUT6:I4->O            1   0.124   0.000  render_unit/sync_unit/Mcount_hc_lut<0> (render_unit/sync_unit/Mcount_hc_lut<0>)
+     FDC:C->Q              7   0.478   0.959  render_unit/sync_unit/hc_5 (render_unit/sync_unit/hc_5)
+     LUT5:I0->O           12   0.124   0.493  render_unit/sync_unit/GND_4_o_GND_4_o_equal_12_o<9>_SW0 (N6)
+     LUT6:I5->O            1   0.124   0.000  render_unit/sync_unit/Mcount_hc_lut<0> (render_unit/sync_unit/Mcount_hc_lut<0>)
      MUXCY:S->O            1   0.472   0.000  render_unit/sync_unit/Mcount_hc_cy<0> (render_unit/sync_unit/Mcount_hc_cy<0>)
      MUXCY:CI->O           1   0.029   0.000  render_unit/sync_unit/Mcount_hc_cy<1> (render_unit/sync_unit/Mcount_hc_cy<1>)
      MUXCY:CI->O           1   0.029   0.000  render_unit/sync_unit/Mcount_hc_cy<2> (render_unit/sync_unit/Mcount_hc_cy<2>)
@@ -629,8 +807,104 @@ Delay:               3.336ns (Levels of Logic = 12)
      XORCY:CI->O           1   0.510   0.000  render_unit/sync_unit/Mcount_hc_xor<9> (render_unit/sync_unit/Mcount_hc9)
      FDC:D                     0.030          render_unit/sync_unit/hc_9
     ----------------------------------------
-    Total                      3.336ns (1.972ns logic, 1.364ns route)
-                                       (59.1% logic, 40.9% route)
+    Total                      3.424ns (1.972ns logic, 1.452ns route)
+                                       (57.6% logic, 42.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'render_unit/div_unit/cnt_19'
+  Clock period: 2.918ns (frequency: 342.642MHz)
+  Total number of paths / destination ports: 528 / 32
+-------------------------------------------------------------------------
+Delay:               2.918ns (Levels of Logic = 33)
+  Source:            render_unit/scroll_0 (FF)
+  Destination:       render_unit/scroll_31 (FF)
+  Source Clock:      render_unit/div_unit/cnt_19 rising
+  Destination Clock: render_unit/div_unit/cnt_19 rising
+
+  Data Path: render_unit/scroll_0 to render_unit/scroll_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.478   0.427  render_unit/scroll_0 (render_unit/scroll_0)
+     LUT1:I0->O            1   0.124   0.000  render_unit/Mcount_scroll_cy<0>_rt (render_unit/Mcount_scroll_cy<0>_rt)
+     MUXCY:S->O            1   0.472   0.000  render_unit/Mcount_scroll_cy<0> (render_unit/Mcount_scroll_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<1> (render_unit/Mcount_scroll_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<2> (render_unit/Mcount_scroll_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<3> (render_unit/Mcount_scroll_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<4> (render_unit/Mcount_scroll_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<5> (render_unit/Mcount_scroll_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<6> (render_unit/Mcount_scroll_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<7> (render_unit/Mcount_scroll_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<8> (render_unit/Mcount_scroll_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<9> (render_unit/Mcount_scroll_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<10> (render_unit/Mcount_scroll_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<11> (render_unit/Mcount_scroll_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<12> (render_unit/Mcount_scroll_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<13> (render_unit/Mcount_scroll_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<14> (render_unit/Mcount_scroll_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<15> (render_unit/Mcount_scroll_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<16> (render_unit/Mcount_scroll_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<17> (render_unit/Mcount_scroll_cy<17>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<18> (render_unit/Mcount_scroll_cy<18>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<19> (render_unit/Mcount_scroll_cy<19>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<20> (render_unit/Mcount_scroll_cy<20>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<21> (render_unit/Mcount_scroll_cy<21>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<22> (render_unit/Mcount_scroll_cy<22>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<23> (render_unit/Mcount_scroll_cy<23>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<24> (render_unit/Mcount_scroll_cy<24>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<25> (render_unit/Mcount_scroll_cy<25>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<26> (render_unit/Mcount_scroll_cy<26>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<27> (render_unit/Mcount_scroll_cy<27>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<28> (render_unit/Mcount_scroll_cy<28>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/Mcount_scroll_cy<29> (render_unit/Mcount_scroll_cy<29>)
+     MUXCY:CI->O           0   0.029   0.000  render_unit/Mcount_scroll_cy<30> (render_unit/Mcount_scroll_cy<30>)
+     XORCY:CI->O           1   0.510   0.000  render_unit/Mcount_scroll_xor<31> (render_unit/Result<31>1)
+     FD:D                      0.030          render_unit/scroll_31
+    ----------------------------------------
+    Total                      2.918ns (2.491ns logic, 0.427ns route)
+                                       (85.4% logic, 14.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.562ns (frequency: 390.396MHz)
+  Total number of paths / destination ports: 210 / 20
+-------------------------------------------------------------------------
+Delay:               2.562ns (Levels of Logic = 21)
+  Source:            render_unit/div_unit/cnt_0 (FF)
+  Destination:       render_unit/div_unit/cnt_19 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: render_unit/div_unit/cnt_0 to render_unit/div_unit/cnt_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.478   0.399  render_unit/div_unit/cnt_0 (render_unit/div_unit/cnt_0)
+     INV:I->O              1   0.146   0.000  render_unit/div_unit/Mcount_cnt_lut<0>_INV_0 (render_unit/div_unit/Mcount_cnt_lut<0>)
+     MUXCY:S->O            1   0.472   0.000  render_unit/div_unit/Mcount_cnt_cy<0> (render_unit/div_unit/Mcount_cnt_cy<0>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/div_unit/Mcount_cnt_cy<1> (render_unit/div_unit/Mcount_cnt_cy<1>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/div_unit/Mcount_cnt_cy<2> (render_unit/div_unit/Mcount_cnt_cy<2>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/div_unit/Mcount_cnt_cy<3> (render_unit/div_unit/Mcount_cnt_cy<3>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/div_unit/Mcount_cnt_cy<4> (render_unit/div_unit/Mcount_cnt_cy<4>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/div_unit/Mcount_cnt_cy<5> (render_unit/div_unit/Mcount_cnt_cy<5>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/div_unit/Mcount_cnt_cy<6> (render_unit/div_unit/Mcount_cnt_cy<6>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/div_unit/Mcount_cnt_cy<7> (render_unit/div_unit/Mcount_cnt_cy<7>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/div_unit/Mcount_cnt_cy<8> (render_unit/div_unit/Mcount_cnt_cy<8>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/div_unit/Mcount_cnt_cy<9> (render_unit/div_unit/Mcount_cnt_cy<9>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/div_unit/Mcount_cnt_cy<10> (render_unit/div_unit/Mcount_cnt_cy<10>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/div_unit/Mcount_cnt_cy<11> (render_unit/div_unit/Mcount_cnt_cy<11>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/div_unit/Mcount_cnt_cy<12> (render_unit/div_unit/Mcount_cnt_cy<12>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/div_unit/Mcount_cnt_cy<13> (render_unit/div_unit/Mcount_cnt_cy<13>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/div_unit/Mcount_cnt_cy<14> (render_unit/div_unit/Mcount_cnt_cy<14>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/div_unit/Mcount_cnt_cy<15> (render_unit/div_unit/Mcount_cnt_cy<15>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/div_unit/Mcount_cnt_cy<16> (render_unit/div_unit/Mcount_cnt_cy<16>)
+     MUXCY:CI->O           1   0.029   0.000  render_unit/div_unit/Mcount_cnt_cy<17> (render_unit/div_unit/Mcount_cnt_cy<17>)
+     MUXCY:CI->O           0   0.029   0.000  render_unit/div_unit/Mcount_cnt_cy<18> (render_unit/div_unit/Mcount_cnt_cy<18>)
+     XORCY:CI->O           1   0.510   0.000  render_unit/div_unit/Mcount_cnt_xor<19> (render_unit/Result<19>)
+     FDC:D                     0.030          render_unit/div_unit/cnt_19
+    ----------------------------------------
+    Total                      2.562ns (2.163ns logic, 0.399ns route)
+                                       (84.4% logic, 15.6% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'model_unit/keyboard/PS2Cf'
@@ -654,39 +928,40 @@ Delay:               1.798ns (Levels of Logic = 0)
                                        (100.0% logic, 0.0% route)
 
 =========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'render_unit/div_unit/cnt_1'
+  Total number of paths / destination ports: 42 / 42
+-------------------------------------------------------------------------
+Offset:              1.253ns (Levels of Logic = 2)
+  Source:            clr (PAD)
+  Destination:       model_unit/status_3 (FF)
+  Destination Clock: render_unit/div_unit/cnt_1 rising
+
+  Data Path: clr to model_unit/status_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            80   0.001   0.584  clr_IBUF (clr_IBUF)
+     LUT3:I2->O            2   0.124   0.405  model_unit/_n0118_inv11 (model_unit/_n0118_inv1)
+     FDRE:CE                   0.139          model_unit/status_2
+    ----------------------------------------
+    Total                      1.253ns (0.264ns logic, 0.989ns route)
+                                       (21.1% logic, 78.9% route)
+
+=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 20 / 20
 -------------------------------------------------------------------------
 Offset:              1.057ns (Levels of Logic = 1)
   Source:            clr (PAD)
-  Destination:       model_unit/div_key/p_0 (FF)
+  Destination:       render_unit/div_unit/cnt_19 (FF)
   Destination Clock: clk rising
 
-  Data Path: clr to model_unit/div_key/p_0
+  Data Path: clr to render_unit/div_unit/cnt_19
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            79   0.001   0.562  clr_IBUF (clr_IBUF)
-     FDC:CLR                   0.494          model_unit/div_key/p_0
-    ----------------------------------------
-    Total                      1.057ns (0.495ns logic, 0.562ns route)
-                                       (46.8% logic, 53.2% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'model_unit/div_key/p_1'
-  Total number of paths / destination ports: 40 / 40
--------------------------------------------------------------------------
-Offset:              1.057ns (Levels of Logic = 1)
-  Source:            clr (PAD)
-  Destination:       render_unit/sync_unit/hc_9 (FF)
-  Destination Clock: model_unit/div_key/p_1 rising
-
-  Data Path: clr to render_unit/sync_unit/hc_9
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            79   0.001   0.562  clr_IBUF (clr_IBUF)
-     FDCE:CLR                  0.494          render_unit/sync_unit/vc_0
+     IBUF:I->O            80   0.001   0.562  clr_IBUF (clr_IBUF)
+     FDC:CLR                   0.494          render_unit/div_unit/cnt_0
     ----------------------------------------
     Total                      1.057ns (0.495ns logic, 0.562ns route)
                                        (46.8% logic, 53.2% route)
@@ -704,84 +979,95 @@ Offset:              1.057ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            79   0.001   0.562  clr_IBUF (clr_IBUF)
+     IBUF:I->O            80   0.001   0.562  clr_IBUF (clr_IBUF)
      FDC_1:CLR                 0.494          model_unit/keyboard/shift1_1
     ----------------------------------------
     Total                      1.057ns (0.495ns logic, 0.562ns route)
                                        (46.8% logic, 53.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 1633 / 23
+Timing constraint: Default OFFSET OUT AFTER for Clock 'render_unit/_n0150'
+  Total number of paths / destination ports: 12 / 12
 -------------------------------------------------------------------------
-Offset:              5.470ns (Levels of Logic = 7)
-  Source:            render_unit/P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_1 (FF)
-  Destination:       green<3> (PAD)
-  Source Clock:      clk rising
-
-  Data Path: render_unit/P2/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_1 to green<3>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDE:C->Q             18   0.478   1.051  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_1 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe<1>)
-     LUT6:I0->O            1   0.124   0.000  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_36 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_36)
-     MUXF7:I1->O           2   0.368   0.945  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_2_f7_5 (douta<7>)
-     end scope: 'render_unit/P2:douta<7>'
-     LUT6:I0->O            2   0.124   0.722  render_unit/btn_data[11]_PWR_2_o_equal_17_o<11>2 (render_unit/btn_data[11]_PWR_2_o_equal_17_o<11>1)
-     LUT3:I0->O           12   0.124   1.011  render_unit/Mmux_blue111 (render_unit/Mmux_blue11)
-     LUT6:I0->O            1   0.124   0.399  render_unit/Mmux_green41 (green_3_OBUF)
-     OBUF:I->O                 0.000          green_3_OBUF (green<3>)
-    ----------------------------------------
-    Total                      5.470ns (1.342ns logic, 4.128ns route)
-                                       (24.5% logic, 75.5% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'model_unit/div_key/p_1'
-  Total number of paths / destination ports: 2618 / 14
--------------------------------------------------------------------------
-Offset:              5.995ns (Levels of Logic = 6)
-  Source:            render_unit/sync_unit/vc_5 (FF)
+Offset:              1.024ns (Levels of Logic = 1)
+  Source:            render_unit/red_3 (LATCH)
   Destination:       red<3> (PAD)
-  Source Clock:      model_unit/div_key/p_1 rising
+  Source Clock:      render_unit/_n0150 falling
 
-  Data Path: render_unit/sync_unit/vc_5 to red<3>
+  Data Path: render_unit/red_3 to red<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            25   0.478   0.867  render_unit/sync_unit/vc_5 (render_unit/sync_unit/vc_5)
-     LUT3:I0->O            2   0.124   0.925  render_unit/pixel_y[9]_GND_2_o_LessThan_16_o21 (render_unit/pixel_y[9]_GND_2_o_LessThan_16_o2)
-     LUT6:I1->O            1   0.124   0.919  render_unit/sync_unit/video_on2 (render_unit/sync_unit/video_on1)
-     LUT6:I1->O           13   0.124   0.796  render_unit/sync_unit/video_on5 (render_unit/video_on)
-     LUT4:I1->O           12   0.124   0.991  render_unit/Mmux_blue121 (render_unit/Mmux_blue12)
-     LUT6:I1->O            1   0.124   0.399  render_unit/Mmux_green11 (green_0_OBUF)
-     OBUF:I->O                 0.000          green_0_OBUF (green<0>)
+     LDC:G->Q              1   0.625   0.399  render_unit/red_3 (render_unit/red_3)
+     OBUF:I->O                 0.000          red_3_OBUF (red<3>)
     ----------------------------------------
-    Total                      5.995ns (1.098ns logic, 4.897ns route)
-                                       (18.3% logic, 81.7% route)
+    Total                      1.024ns (0.625ns logic, 0.399ns route)
+                                       (61.0% logic, 39.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'model_unit/keyboard/PS2Cf'
-  Total number of paths / destination ports: 520 / 22
+  Total number of paths / destination ports: 136 / 10
 -------------------------------------------------------------------------
-Offset:              5.930ns (Levels of Logic = 6)
-  Source:            model_unit/keyboard/shift1_7 (FF)
-  Destination:       red<3> (PAD)
+Offset:              3.778ns (Levels of Logic = 4)
+  Source:            model_unit/keyboard/shift2_5 (FF)
+  Destination:       an<1> (PAD)
   Source Clock:      model_unit/keyboard/PS2Cf falling
 
-  Data Path: model_unit/keyboard/shift1_7 to red<3>
+  Data Path: model_unit/keyboard/shift2_5 to an<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC_1:C->Q            4   0.484   0.959  model_unit/keyboard/shift1_7 (model_unit/keyboard/shift1_7)
-     LUT6:I0->O            1   0.124   0.919  render_unit/btn_pos_btn_visible_AND_208_o1 (render_unit/btn_pos_btn_visible_AND_208_o1)
-     LUT6:I1->O            1   0.124   0.776  render_unit/btn_pos_btn_visible_AND_208_o4 (render_unit/btn_pos_btn_visible_AND_208_o4)
-     LUT6:I2->O            2   0.124   0.782  render_unit/btn_pos_btn_visible_AND_208_o10 (render_unit/btn_pos_btn_visible_AND_208_o)
-     LUT4:I0->O           12   0.124   0.991  render_unit/Mmux_blue121 (render_unit/Mmux_blue12)
-     LUT6:I1->O            1   0.124   0.399  render_unit/Mmux_green11 (green_0_OBUF)
-     OBUF:I->O                 0.000          green_0_OBUF (green<0>)
+     FDC_1:C->Q            4   0.484   0.796  model_unit/keyboard/shift2_5 (model_unit/keyboard/shift2_5)
+     LUT4:I0->O            2   0.124   0.782  model_unit/seg_disp/aen<3><4>1 (model_unit/seg_disp/aen<3>)
+     LUT5:I1->O            2   0.124   0.945  model_unit/seg_disp/aen<2><3>1 (model_unit/seg_disp/aen<2>)
+     LUT6:I0->O            1   0.124   0.399  model_unit/seg_disp/Mmux_an2 (an_1_OBUF)
+     OBUF:I->O                 0.000          an_1_OBUF (an<1>)
     ----------------------------------------
-    Total                      5.930ns (1.104ns logic, 4.826ns route)
-                                       (18.6% logic, 81.4% route)
+    Total                      3.778ns (0.856ns logic, 2.922ns route)
+                                       (22.7% logic, 77.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 124 / 11
+-------------------------------------------------------------------------
+Offset:              3.094ns (Levels of Logic = 4)
+  Source:            render_unit/div_unit/cnt_17 (FF)
+  Destination:       segment<5> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: render_unit/div_unit/cnt_17 to segment<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.478   0.608  render_unit/div_unit/cnt_17 (render_unit/div_unit/cnt_17)
+     LUT3:I1->O            1   0.124   0.421  model_unit/seg_disp/Mmux_digit<2>1_SW0 (N16)
+     LUT6:I5->O            7   0.124   0.816  model_unit/seg_disp/Mmux_digit<2>1 (model_unit/seg_disp/digit<2>)
+     LUT4:I0->O            1   0.124   0.399  model_unit/seg_disp/Mram_a_to_g111 (segment_1_OBUF)
+     OBUF:I->O                 0.000          segment_1_OBUF (segment<1>)
+    ----------------------------------------
+    Total                      3.094ns (0.850ns logic, 2.244ns route)
+                                       (27.5% logic, 72.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'render_unit/div_unit/cnt_1'
+  Total number of paths / destination ports: 14 / 2
+-------------------------------------------------------------------------
+Offset:              2.394ns (Levels of Logic = 3)
+  Source:            render_unit/sync_unit/vc_6 (FF)
+  Destination:       vsync (PAD)
+  Source Clock:      render_unit/div_unit/cnt_1 rising
+
+  Data Path: render_unit/sync_unit/vc_6 to vsync
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            12   0.478   0.848  render_unit/sync_unit/vc_6 (render_unit/sync_unit/vc_6)
+     LUT4:I0->O            1   0.124   0.421  render_unit/vsync1_SW0 (N4)
+     LUT6:I5->O            1   0.124   0.399  render_unit/vsync1 (vsync_OBUF)
+     OBUF:I->O                 0.000          vsync_OBUF (vsync)
+    ----------------------------------------
+    Total                      2.394ns (0.726ns logic, 1.668ns route)
+                                       (30.3% logic, 69.7% route)
 
 =========================================================================
 
@@ -789,42 +1075,61 @@ Cross Clock Domains Report:
 --------------------------
 
 Clock to Setup on destination clock clk
-----------------------+---------+---------+---------+---------+
-                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------+---------+---------+---------+---------+
-clk                   |    2.568|         |         |         |
-model_unit/div_key/p_1|    8.821|         |         |         |
-----------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock model_unit/div_key/p_1
-----------------------+---------+---------+---------+---------+
-                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------+---------+---------+---------+---------+
-model_unit/div_key/p_1|    3.336|         |         |         |
-----------------------+---------+---------+---------+---------+
+---------------------------+---------+---------+---------+---------+
+                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------+---------+---------+---------+---------+
+clk                        |    2.562|         |         |         |
+render_unit/div_unit/cnt_1 |   92.197|         |         |         |
+render_unit/div_unit/cnt_19|   90.093|         |         |         |
+---------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock model_unit/keyboard/PS2Cf
--------------------------+---------+---------+---------+---------+
-                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
--------------------------+---------+---------+---------+---------+
-model_unit/div_key/p_1   |         |         |    0.907|         |
-model_unit/keyboard/PS2Cf|         |         |    1.798|         |
--------------------------+---------+---------+---------+---------+
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+model_unit/keyboard/PS2Cf |         |         |    1.798|         |
+render_unit/div_unit/cnt_1|         |         |    0.907|         |
+--------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock render_unit/_n0150
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+clk                       |         |         |    6.773|         |
+render_unit/div_unit/cnt_1|         |         |    6.944|         |
+--------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock render_unit/div_unit/cnt_1
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+model_unit/keyboard/PS2Cf |         |    5.520|         |         |
+render_unit/div_unit/cnt_1|    3.424|         |         |         |
+--------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock render_unit/div_unit/cnt_19
+---------------------------+---------+---------+---------+---------+
+                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------+---------+---------+---------+---------+
+render_unit/div_unit/cnt_19|    2.918|         |         |         |
+---------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 32.00 secs
-Total CPU time to Xst completion: 32.46 secs
+Total REAL time to Xst completion: 38.00 secs
+Total CPU time to Xst completion: 38.53 secs
  
 --> 
 
-Total memory usage is 476896 kilobytes
+Total memory usage is 477596 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   16 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :   78 (   0 filtered)
+Number of infos    :   24 (   0 filtered)
 

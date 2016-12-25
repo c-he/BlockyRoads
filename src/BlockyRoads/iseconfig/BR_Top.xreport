@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-12-23T18:49:46</DateModified>
+  <DateModified>2016-12-25T13:32:14</DateModified>
   <ModuleName>BR_Top</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2016-12-25T00:37:13</SummaryTimeStamp>
   <SavedFilePath>C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/iseconfig/BR_Top.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads\</ImplementationReportsDirectory>
   <DateInitialized>2016-12-14T23:00:20</DateInitialized>
@@ -19,7 +19,7 @@
     <toc-item title="Detailed Reports" target="Detailed Reports" />
    </view>
    <view inputState="Unknown" program="implementation" contextTags="FPGA_ONLY" hidden="true" type="HTML" file="BR_Top_envsettings.html" label="System Settings" />
-   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="BR_Top_map.xrpt" label="IOB Properties" />
+   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="BR_Top_map.xrpt" showConstraints="0" label="IOB Properties" />
    <view inputState="Translated" program="map" contextTags="FPGA_ONLY" hidden="true" type="Control_Sets" file="BR_Top_map.xrpt" label="Control Set Information" />
    <view inputState="Translated" program="map" locator="MAP_MODULE_HIERARCHY" contextTags="FPGA_ONLY" type="Module_Utilization" file="BR_Top_map.xrpt" label="Module Level Utilization" />
    <view inputState="Mapped" program="par" locator="CONSTRAINT_TABLE" contextTags="FPGA_ONLY" type="ConstraintsData" file="BR_Top.ptwx" label="Timing Constraints" translator="ptwxToTableXML.xslt" />

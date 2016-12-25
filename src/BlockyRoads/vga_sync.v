@@ -27,10 +27,10 @@ module vga_sync(
 
 	parameter hpixels = 800; 
 	parameter vlines  = 525; 
-	parameter hbp     = 143; 
-	parameter hfp     = 783; 
-	parameter vbp     = 31; 
-	parameter vfp     = 519;
+	parameter hbp     = 144; 
+	parameter hfp     = 784; 
+	parameter vbp     = 35; 
+	parameter vfp     = 515;
 	
 	reg [9:0] hc, vc;
 	

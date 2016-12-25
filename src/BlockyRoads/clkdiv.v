@@ -21,27 +21,29 @@
 module clkdiv(
     input wire clk,
 	input wire clr,
-	output wire clk25m
+	output wire clk25m,
+	output wire clk100
 	);
 	
-	reg [ 2:0] p;		// registers to generate 25MHz pulse
+	reg [31:0] cnt;
 	
 	initial begin
-		p <= 3'b0;
+		cnt <= 32'b0;
 	end
 	
 	always @ (posedge clk or posedge clr)
 	begin
-		if (clr == 1)
+		if (clr == 1'b1)
 		begin
-			p <= 3'b0;
+			cnt <= 32'b0;
 		end
 		else
 		begin
-			p <= p + 1;
+			cnt <= cnt + 1'b1;
 		end
 	end
 	
-	assign clk25m = p[1];
+	assign clk25m = cnt[1];
+	assign clk100 = cnt[19];
 
 endmodule

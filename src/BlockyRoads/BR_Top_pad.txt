@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Dec 23 21:42:55 2016
+Sun Dec 25 18:17:05 2016
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -22,10 +22,10 @@ Pinout by Pin Number:
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |A1        |           |IOB33S   |IO_L9N_T1_DQS_AD7N_35       |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |A2        |           |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
-|A3        |red<0>     |IOB33    |IO_L8N_T1_AD14N_35          |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
-|A4        |red<3>     |IOB33    |IO_L8P_T1_AD14P_35          |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
-|A5        |green<1>   |IOB33    |IO_L3N_T0_DQS_AD5N_35       |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
-|A6        |green<3>   |IOB33    |IO_L3P_T0_DQS_AD5P_35       |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|A3        |red<0>     |IOB33    |IO_L8N_T1_AD14N_35          |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
+|A4        |red<3>     |IOB33    |IO_L8P_T1_AD14P_35          |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
+|A5        |green<1>   |IOB33    |IO_L3N_T0_DQS_AD5N_35       |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
+|A6        |green<3>   |IOB33    |IO_L3P_T0_DQS_AD5P_35       |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
 |A7        |           |         |VCCO_35                     |         |           |35            |          |         |           |         |3.30     |          |           |                |
 |A8        |           |IOB33S   |IO_L12N_T1_MRCC_16          |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
 |A9        |           |IOB33S   |IO_L14N_T2_SRCC_16          |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
@@ -41,10 +41,10 @@ Pinout by Pin Number:
 |B1        |           |IOB33M   |IO_L9P_T1_DQS_AD7P_35       |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |B2        |ps2d       |IOB33    |IO_L10N_T1_AD15N_35         |INPUT    |LVCMOS33   |35            |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |B3        |           |IOB33M   |IO_L10P_T1_AD15P_35         |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
-|B4        |red<1>     |IOB33    |IO_L7N_T1_AD6N_35           |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|B4        |red<1>     |IOB33    |IO_L7N_T1_AD6N_35           |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
 |B5        |           |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
-|B6        |green<2>   |IOB33    |IO_L2N_T0_AD12N_35          |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
-|B7        |blue<0>    |IOB33    |IO_L2P_T0_AD12P_35          |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|B6        |green<2>   |IOB33    |IO_L2N_T0_AD12N_35          |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
+|B7        |blue<0>    |IOB33    |IO_L2P_T0_AD12P_35          |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
 |B8        |           |IOB33M   |IO_L12P_T1_MRCC_16          |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
 |B9        |           |IOB33S   |IO_L11N_T1_SRCC_16          |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
 |B10       |           |         |VCCO_16                     |         |           |16            |          |         |           |         |any******|          |           |                |
@@ -60,9 +60,9 @@ Pinout by Pin Number:
 |C2        |           |IOB33M   |IO_L16P_T2_35               |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |C3        |           |         |VCCO_35                     |         |           |35            |          |         |           |         |3.30     |          |           |                |
 |C4        |           |IOB33M   |IO_L7P_T1_AD6P_35           |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
-|C5        |red<2>     |IOB33    |IO_L1N_T0_AD4N_35           |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
-|C6        |green<0>   |IOB33    |IO_L1P_T0_AD4P_35           |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
-|C7        |blue<1>    |IOB33    |IO_L4N_T0_35                |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|C5        |red<2>     |IOB33    |IO_L1N_T0_AD4N_35           |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
+|C6        |green<0>   |IOB33    |IO_L1P_T0_AD4P_35           |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
+|C7        |blue<1>    |IOB33    |IO_L4N_T0_35                |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
 |C8        |           |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |C9        |           |IOB33M   |IO_L11P_T1_SRCC_16          |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
 |C10       |           |IOB33S   |IO_L13N_T2_MRCC_16          |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
@@ -80,8 +80,8 @@ Pinout by Pin Number:
 |D4        |           |IOB33S   |IO_L11N_T1_SRCC_35          |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |D5        |           |IOB33M   |IO_L11P_T1_SRCC_35          |UNUSED   |           |35            |          |         |           |         |         |          |           |                |
 |D6        |           |         |VCCO_35                     |         |           |35            |          |         |           |         |3.30     |          |           |                |
-|D7        |blue<2>    |IOB33    |IO_L6N_T0_VREF_35           |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
-|D8        |blue<3>    |IOB33    |IO_L4P_T0_35                |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|D7        |blue<2>    |IOB33    |IO_L6N_T0_VREF_35           |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
+|D8        |blue<3>    |IOB33    |IO_L4P_T0_35                |OUTPUT   |LVCMOS33   |35            |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
 |D9        |           |IOB33S   |IO_L6N_T0_VREF_16           |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
 |D10       |           |IOB33S   |IO_L19N_T3_VREF_16          |UNUSED   |           |16            |          |         |           |         |         |          |           |                |
 |D11       |           |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |

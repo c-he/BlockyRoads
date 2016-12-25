@@ -27,15 +27,10 @@ module BR_Top(
 	output wire [7:0] segment
 	);
 	
-	// game status signal declaration
-	localparam [1:0]
-		load      = 2'b00,
-		activate  = 2'b01,
-		pause     = 2'b10,
-		terminate = 2'b11;
-	wire [1:0] status;
+	wire [3:0] status;
+	wire [3:0] direction;
 	
-	Renderer render_unit (.clk(clk), .clr(clr), .status(status), .hsync(hsync), .vsync(vsync), .red(red), .green(green), .blue(blue) );
-	Model model_unit (.clk(clk), .clr(clr), .ps2c(ps2c), .ps2d(ps2d), .segment(segment), .an(an), .status(status));
+	Renderer render_unit (.clk(clk), .clr(clr), .status(status), .direction(direction), .hsync(hsync), .vsync(vsync), .red(red), .green(green), .blue(blue) );
+	Model model_unit (.clk(clk), .clr(clr), .ps2c(ps2c), .ps2d(ps2d), .segment(segment), .an(an), .status(status), .direction(direction));
 
 endmodule

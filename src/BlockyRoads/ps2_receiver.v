@@ -30,7 +30,7 @@ module ps2_receiver(
 	
 	assign xkey = {shift2[8:1], shift1[8:1]};
 	
-	// filter for PS2 clock and data
+	// Filter for PS2 clock and data
 	
 	always @ (posedge clk or posedge clr)
 	begin

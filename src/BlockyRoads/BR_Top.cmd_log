@@ -385,3 +385,240 @@ map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
 trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
 bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 
+xst -intstyle ise -ifn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.xst" -ofn "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/BR_Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-1 "BR_Top.ngc" BR_Top.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o BR_Top_map.ncd BR_Top.ngd BR_Top.pcf 
+par -w -intstyle ise -ol high -mt off BR_Top_map.ncd BR_Top.ncd BR_Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml BR_Top.twx BR_Top.ncd -o BR_Top.twr BR_Top.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f BR_Top.ut BR_Top.ncd 

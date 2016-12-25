@@ -89,7 +89,7 @@ USE UNISIM.VCOMPONENTS.ALL;
 ENTITY startBtn_exdes IS
   PORT (
       --Inputs - Port A
-    ADDRA          : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
+    ADDRA          : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
   
     DOUTA          : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
     CLKA       : IN STD_LOGIC
@@ -112,7 +112,7 @@ ARCHITECTURE xilinx OF startBtn_exdes IS
   COMPONENT startBtn IS
   PORT (
       --Port A
-    ADDRA      : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
+    ADDRA      : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
   
     DOUTA      : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
 
