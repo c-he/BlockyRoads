@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj BlockyRoads -o "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads/Random.tfi" -lib work "C:/Users/fairy/Documents/Computer Science/Digital Logic Design/Project/BlockyRoads/src/BlockyRoads//Random.v" -module Random -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

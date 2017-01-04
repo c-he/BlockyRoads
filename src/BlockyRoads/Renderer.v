@@ -20,117 +20,85 @@
 //////////////////////////////////////////////////////////////////////////////////
 module Renderer(
     input wire clk, clr,
-	input wire [3:0] status, direction,
-	output wire hsync, vsync,
-	output reg  [3:0] red, green, blue
+	input wire [ 3: 0] status,
+	input wire video_on,
+	input wire [ 9: 0] pixel_x, pixel_y,
+	input wire btn_pos, mycar_pos, explode_pos,
+	input wire btn_visible, explode_visible,
+	input wire obstacle_pos0, obstacle_pos1, obstacle_pos2, obstacle_pos3, obstacle_pos4,
+	input wire iscollide0, iscollide1, iscollide2, iscollide3, iscollide4,
+	input wire signed [31:0] scroll,
+	input wire [16: 0] back_addr, side_addr,
+	input wire [13: 0] btn_addr,
+	input wire [12: 0] mycar_addr,
+	input wire [12: 0] obstacle_addr0, obstacle_addr1, obstacle_addr2, obstacle_addr3, obstacle_addr4,
+	input wire [15:0] explode_addr,
+	output reg [ 3: 0] red, green, blue
 	);
-	//============================================================================
-	// vga_test module
-	//============================================================================
-	// vga_test debug_unit ( .clk(clk), .clr(clr), .hsync(hsync), .vsync(vsync), .red(red), .green(green), .blue(blue) );
-	
-	//============================================================================
-	// Signal declaration
-	//============================================================================
-	wire clk25m, clk100;
-	wire video_on;
-	wire btn_pos;
-	wire back_pos;
-	wire road_pos;
-	wire [9:0] pixel_x, pixel_y;
-	wire [9:0] back_x, back_y, btn_x, btn_y, road_x, road_y;
-	wire [10:0] back_xrom, back_yrom, btn_xrom, btn_yrom, road_xrom, road_yrom;
-	wire [15:0] back_addr;
-	wire [12:0] btn_addr;
-	wire [16:0] road_addr;
-	wire [11:0] back_data, btn_data, road_data;
-	reg signed [31:0] scroll;
 	
 	// Game status signal declaration
 	localparam [3:0]
-		load      = 4'b1000,
+		prepare   = 4'b1000,
 		activate  = 4'b0100,
 		pause     = 4'b0010,
-		terminate = 4'b0001,
-		none      = 4'b0000;
+		terminate = 4'b0001;
+	
 	//============================================================================
 	// Instantiation
 	//============================================================================
-	// Instantiate vga_sync circuit
-	clkdiv div_unit (.clk(clk), .clr(clr), .clk25m(clk25m), .clk100(clk100));
-	vga_sync sync_unit (
-	 	.clk(clk25m), .clr(clr), .hsync(hsync), .vsync(vsync), .video_on(video_on), .pixel_x(pixel_x), .pixel_y(pixel_y)
-	);
-
 	// Instantiate bmp's pixel data
-	background P1 (.clka(clk), .addra(back_addr), .douta(back_data));
-	startBtn   P2 (.clka(clk), .addra(btn_addr), .douta(btn_data));
-	road       P3 (.clka(clk), .addra(road_addr), .douta(road_data));
+	wire [11:0] back_data, btn_data, side_data, mycar_data, explode_data;
+	wire [11:0] obstacle_data [0:4];
 	
-	//============================================================================
-	// Object's properity
-	//============================================================================
-	// Background's properities
-	assign back_x      = pixel_x;
-	assign back_y      = pixel_y - 60;
-	assign back_xrom   = {1'b0, back_x[9:1]};
-	assign back_yrom   = {1'b0, back_y[9:1]};
-	assign back_addr   = back_yrom * 320 + back_xrom;
-	assign back_pos    = (pixel_y >=60) && (pixel_y < 420);
-	// Start Button's properities
-	assign btn_x       = pixel_x - 340;
-	assign btn_y       = pixel_y - 340;
-	assign btn_xrom    = {1'b0, btn_x[9:1]};
-	assign btn_yrom    = {1'b0, btn_y[9:1]};
-	assign btn_addr    = btn_yrom * 160 + btn_xrom;
-	assign btn_pos     = (pixel_x > 340) && (pixel_x <= 660) && (pixel_y >= 340) && (pixel_y < 420);
-	// Road's properities
-	assign road_x      = back_x;
-	assign road_y      = back_y;
-	assign road_xrom   = {1'b0, road_x[9:1]};
-	assign road_yrom   = ({1'b0, road_y[9:1]} + scroll) % 310;
-	assign road_addr   = road_yrom * 320 + road_xrom;
-	assign road_pos    = back_pos;
+	background P1    (.clka(clk), .addra(back_addr), .douta(back_data));
+	startBtn   P2    (.clka(clk), .addra(btn_addr), .douta(btn_data));
+	side       P3    (.clka(clk), .addra(side_addr), .douta(side_data));
+	car     mycar    (.clka(clk), .addra(mycar_addr), .douta(mycar_data));
+	police obstacle0 (.clka(clk), .addra(obstacle_addr0), .douta(obstacle_data[0]));
+	police obstacle1 (.clka(clk), .addra(obstacle_addr1), .douta(obstacle_data[1]));
+	car    obstacle2 (.clka(clk), .addra(obstacle_addr2), .douta(obstacle_data[2]));
+	car    obstacle3 (.clka(clk), .addra(obstacle_addr3), .douta(obstacle_data[3]));
+	car    obstacle4 (.clka(clk), .addra(obstacle_addr4), .douta(obstacle_data[4]));
+	explosion explode (.clka(clk), .addra(explode_addr), .douta(explode_data));
 	
 	//==========================================================================
-	// Move
-	//==========================================================================
-	// Scrolling the road
-	always @ (posedge clk100)
-	begin
-		scroll <= scroll - 1'b1;
-	end
-	
-	//===========================================================================
 	// Render
-	// Layer 0: background
-	// Layer 1: static objects
-	// Layer 2: moving objects
-	//===========================================================================
+	// Layer 0: Explosion
+	// Layer 1: Moving cars and obstacles
+	// Layer 2: Slides, road and background (side)
+	//==========================================================================
+	// Road's properities
+	parameter slide_x  = 10;
+	parameter slide_y  = 40;
+	parameter interval = 20;
+	parameter lane_x   = 96;
+	integer i;
+	wire [9:0] dot_y;
+	wire slide_pos, road_pos;
+	
+	assign dot_y     = (pixel_y + scroll) % 480;
+	assign slide_pos = (pixel_x >= 74 && pixel_x < 85) || (pixel_x >= 554 && pixel_x < 565);
+	assign road_pos  = pixel_x >= 85 && pixel_x < 554;
+	
+	// Layer definition
+	wire layer1;
+	assign layer1 = mycar_pos || obstacle_pos0 || obstacle_pos1 || obstacle_pos2 || obstacle_pos3 || obstacle_pos4;
+	
 	always @*
 	begin
 	 	if (video_on)
 	 	begin
 			// Use FSM to render differnet status
 			case (status)
-				load:
+				prepare:
 				begin
-					if (btn_pos) 							// Render the button
+					if (btn_pos && btn_visible) 			// Render the button
 					begin
 						if (btn_data == 12'hfff)			// Filter the background color
 						begin
-							if (back_pos)
-							begin
-								red   <= back_data[ 3: 0];
-								green <= back_data[ 7: 4];
-								blue  <= back_data[11: 8];
-							end
-							else
-							begin
-								red   <= 4'b0;
-								green <= 4'b1000;
-								blue  <= 4'b1111;
-							end
+							red   <= back_data[ 3: 0];
+							green <= back_data[ 7: 4];
+							blue  <= back_data[11: 8];
 						end
 						else
 						begin
@@ -139,47 +107,463 @@ module Renderer(
 							blue  <= btn_data[11: 8];
 						end
 					end
-					else if (back_pos)
-					begin
-							red   <= back_data[ 3: 0];
-							green <= back_data[ 7: 4];
-							blue  <= back_data[11: 8];
-					end
 					else
-					begin
-						red   <= 4'b0;
-						green <= 4'b1000;
-						blue  <= 4'b1111;
-					end
-				end
-				activate:									// Render the activate status
-				begin
-					if (road_pos)
-					begin
-						red   <= road_data[ 3: 0];
-						green <= road_data[ 7: 4];
-						blue  <= road_data[11: 8];
-					end
-					else
-					begin
-						red   <= 4'b0;
-						green <= 4'b1000;
-						blue  <= 4'b1111;
-					end
-				end
-				none:										// Render the default status
-				begin
-					if (back_pos)							// Render the background
 					begin
 						red   <= back_data[ 3: 0];
 						green <= back_data[ 7: 4];
 						blue  <= back_data[11: 8];
 					end
-					else
+				end
+				activate:									// Render the activate status
+				begin
+					if (explode_pos && explode_visible)		//================================================ Layer 0
 					begin
-						red   <= 4'b0;
-						green <= 4'b1000;
-						blue  <= 4'b1111;
+						if (explode_data == 12'h0f0 || explode_data == 12'h1f1 || explode_data == 12'h2f2 || explode_data == 12'h0e0)
+						begin
+							if (mycar_pos)
+							begin
+								if (mycar_data == 12'h0f0 || mycar_data == 12'h1f1 || mycar_data == 12'h2f2 || mycar_data == 12'h0e0)
+								begin
+									if (slide_pos)
+									begin
+										red   <= (4'b1111 * 12 + side_data[ 3: 0] * 3) / 15;
+										green <= (4'b1111 * 12 + side_data[ 7: 4] * 3) / 15;
+										blue  <= (4'b1111 * 12 + side_data[11: 8] * 3) / 15;
+									end
+									else if (road_pos)
+									begin
+										red   <= (4'b0101 * 12 + side_data[ 3: 0] * 3) / 15;
+										green <= (4'b0101 * 12 + side_data[ 7: 4] * 3) / 15;
+										blue  <= (4'b0100 * 12 + side_data[11: 8] * 3) / 15;
+									end
+									else
+									begin
+										red   <= side_data[ 3: 0];
+										green <= side_data[ 7: 4];
+										blue  <= side_data[11: 8];
+									end
+								end
+								else
+								begin
+									red   <= mycar_data[ 3: 0];
+									green <= mycar_data[ 7: 4];
+									blue  <= mycar_data[11: 8];
+								end
+							end
+							else if (obstacle_pos0 && !iscollide0)
+							begin
+								if (obstacle_data[0] == 12'h0f0 || obstacle_data[0] == 12'h1f1 || obstacle_data[0] == 12'h2f2 || obstacle_data[0] == 12'h0e0)
+								begin
+									if (slide_pos)
+									begin
+										red   <= (4'b1111 * 12 + side_data[ 3: 0] * 3) / 15;
+										green <= (4'b1111 * 12 + side_data[ 7: 4] * 3) / 15;
+										blue  <= (4'b1111 * 12 + side_data[11: 8] * 3) / 15;
+									end
+									else if (road_pos)
+									begin
+										red   <= (4'b0101 * 12 + side_data[ 3: 0] * 3) / 15;
+										green <= (4'b0101 * 12 + side_data[ 7: 4] * 3) / 15;
+										blue  <= (4'b0100 * 12 + side_data[11: 8] * 3) / 15;
+									end
+									else
+									begin
+										red   <= side_data[ 3: 0];
+										green <= side_data[ 7: 4];
+										blue  <= side_data[11: 8];
+									end
+								end
+								else
+								begin
+									red   <= obstacle_data[0][ 3: 0];
+									green <= obstacle_data[0][ 7: 4];
+									blue  <= obstacle_data[0][11: 8];
+								end
+							end
+							else if (obstacle_pos1 && !iscollide1)
+							begin
+								if (obstacle_data[1] == 12'h0f0 || obstacle_data[1] == 12'h1f1 || obstacle_data[1] == 12'h2f2 || obstacle_data[1] == 12'h0e0)
+								begin
+									if (slide_pos)
+									begin
+										red   <= (4'b1111 * 12 + side_data[ 3: 0] * 3) / 15;
+										green <= (4'b1111 * 12 + side_data[ 7: 4] * 3) / 15;
+										blue  <= (4'b1111 * 12 + side_data[11: 8] * 3) / 15;
+									end
+									else if (road_pos)
+									begin
+										red   <= (4'b0101 * 12 + side_data[ 3: 0] * 3) / 15;
+										green <= (4'b0101 * 12 + side_data[ 7: 4] * 3) / 15;
+										blue  <= (4'b0100 * 12 + side_data[11: 8] * 3) / 15;
+									end
+									else
+									begin
+										red   <= side_data[ 3: 0];
+										green <= side_data[ 7: 4];
+										blue  <= side_data[11: 8];
+									end
+								end
+								else
+								begin
+									red   <= obstacle_data[1][ 3: 0];
+									green <= obstacle_data[1][ 7: 4];
+									blue  <= obstacle_data[1][11: 8];
+								end
+							end
+							else if (obstacle_pos2 && !iscollide2)
+							begin
+								if (obstacle_data[2] == 12'h0f0 || obstacle_data[2] == 12'h1f1 || obstacle_data[2] == 12'h2f2 || obstacle_data[2] == 12'h0e0)
+								begin
+									if (slide_pos)
+									begin
+										red   <= (4'b1111 * 12 + side_data[ 3: 0] * 3) / 15;
+										green <= (4'b1111 * 12 + side_data[ 7: 4] * 3) / 15;
+										blue  <= (4'b1111 * 12 + side_data[11: 8] * 3) / 15;
+									end
+									else if (road_pos)
+									begin
+										red   <= (4'b0101 * 12 + side_data[ 3: 0] * 3) / 15;
+										green <= (4'b0101 * 12 + side_data[ 7: 4] * 3) / 15;
+										blue  <= (4'b0100 * 12 + side_data[11: 8] * 3) / 15;
+									end
+									else
+									begin
+										red   <= side_data[ 3: 0];
+										green <= side_data[ 7: 4];
+										blue  <= side_data[11: 8];
+									end
+								end
+								else
+								begin
+									red   <= obstacle_data[2][ 3: 0];
+									green <= obstacle_data[2][ 7: 4];
+									blue  <= obstacle_data[2][11: 8];
+								end
+							end
+							else if (obstacle_pos3 && !iscollide3)
+							begin
+								if (obstacle_data[3] == 12'h0f0 || obstacle_data[3] == 12'h1f1 || obstacle_data[3] == 12'h2f2 || obstacle_data[3] == 12'h0e0)
+								begin
+									if (slide_pos)
+									begin
+										red   <= (4'b1111 * 12 + side_data[ 3: 0] * 3) / 15;
+										green <= (4'b1111 * 12 + side_data[ 7: 4] * 3) / 15;
+										blue  <= (4'b1111 * 12 + side_data[11: 8] * 3) / 15;
+									end
+									else if (road_pos)
+									begin
+										red   <= (4'b0101 * 12 + side_data[ 3: 0] * 3) / 15;
+										green <= (4'b0101 * 12 + side_data[ 7: 4] * 3) / 15;
+										blue  <= (4'b0100 * 12 + side_data[11: 8] * 3) / 15;
+									end
+									else
+									begin
+										red   <= side_data[ 3: 0];
+										green <= side_data[ 7: 4];
+										blue  <= side_data[11: 8];
+									end
+								end
+								else
+								begin
+									red   <= obstacle_data[3][ 3: 0];
+									green <= obstacle_data[3][ 7: 4];
+									blue  <= obstacle_data[3][11: 8];
+								end
+							end
+							else if (obstacle_pos4 && !iscollide4)
+							begin
+								if (obstacle_data[4] == 12'h0f0 || obstacle_data[4] == 12'h1f1 || obstacle_data[4] == 12'h2f2 || obstacle_data[4] == 12'h0e0)
+								begin
+									if (slide_pos)
+									begin
+										red   <= (4'b1111 * 12 + side_data[ 3: 0] * 3) / 15;
+										green <= (4'b1111 * 12 + side_data[ 7: 4] * 3) / 15;
+										blue  <= (4'b1111 * 12 + side_data[11: 8] * 3) / 15;
+									end
+									else if (road_pos)
+									begin
+										red   <= (4'b0101 * 12 + side_data[ 3: 0] * 3) / 15;
+										green <= (4'b0101 * 12 + side_data[ 7: 4] * 3) / 15;
+										blue  <= (4'b0100 * 12 + side_data[11: 8] * 3) / 15;
+									end
+									else
+									begin
+										red   <= side_data[ 3: 0];
+										green <= side_data[ 7: 4];
+										blue  <= side_data[11: 8];
+									end
+								end
+								else
+								begin
+									red   <= obstacle_data[4][ 3: 0];
+									green <= obstacle_data[4][ 7: 4];
+									blue  <= obstacle_data[4][11: 8];
+								end
+							end
+							else if (slide_pos)
+							begin
+								red   <= (4'b1111 * 12 + side_data[ 3: 0] * 3) / 15;
+								green <= (4'b1111 * 12 + side_data[ 7: 4] * 3) / 15;
+								blue  <= (4'b1111 * 12 + side_data[11: 8] * 3) / 15;
+							end
+							else if (road_pos)
+							begin
+								red   <= (4'b0101 * 12 + side_data[ 3: 0] * 3) / 15;
+								green <= (4'b0101 * 12 + side_data[ 7: 4] * 3) / 15;
+								blue  <= (4'b0100 * 12 + side_data[11: 8] * 3) / 15;
+							end
+							else
+							begin
+								red   <= side_data[ 3: 0];
+								green <= side_data[ 7: 4];
+								blue  <= side_data[11: 8];
+							end		
+						end
+						else
+						begin
+							red   <= explode_data[ 3: 0];
+							green <= explode_data[ 7: 4];
+							blue  <= explode_data[11: 8];
+						end
+					end
+					else if (layer1)						//=================================================== Layer 1
+					begin
+						if (mycar_pos)
+						begin
+							if (mycar_data == 12'h0f0 || mycar_data == 12'h1f1 || mycar_data == 12'h2f2 || mycar_data == 12'h0e0)
+							begin
+								if (slide_pos)
+								begin
+									red   <= (4'b1111 * 12 + side_data[ 3: 0] * 3) / 15;
+									green <= (4'b1111 * 12 + side_data[ 7: 4] * 3) / 15;
+									blue  <= (4'b1111 * 12 + side_data[11: 8] * 3) / 15;
+								end
+								else if (road_pos)
+								begin
+									red   <= (4'b0101 * 12 + side_data[ 3: 0] * 3) / 15;
+									green <= (4'b0101 * 12 + side_data[ 7: 4] * 3) / 15;
+									blue  <= (4'b0100 * 12 + side_data[11: 8] * 3) / 15;
+								end
+								else
+								begin
+									red   <= side_data[ 3: 0];
+									green <= side_data[ 7: 4];
+									blue  <= side_data[11: 8];
+								end
+							end
+							else
+							begin
+								red   <= mycar_data[ 3: 0];
+								green <= mycar_data[ 7: 4];
+								blue  <= mycar_data[11: 8];
+							end
+						end
+						else if (obstacle_pos0 && !iscollide0)
+						begin
+							if (obstacle_data[0] == 12'h0f0 || obstacle_data[0] == 12'h1f1 || obstacle_data[0] == 12'h2f2 || obstacle_data[0] == 12'h0e0)
+							begin
+								if (slide_pos)
+								begin
+									red   <= (4'b1111 * 12 + side_data[ 3: 0] * 3) / 15;
+									green <= (4'b1111 * 12 + side_data[ 7: 4] * 3) / 15;
+									blue  <= (4'b1111 * 12 + side_data[11: 8] * 3) / 15;
+								end
+								else if (road_pos)
+								begin
+									red   <= (4'b0101 * 12 + side_data[ 3: 0] * 3) / 15;
+									green <= (4'b0101 * 12 + side_data[ 7: 4] * 3) / 15;
+									blue  <= (4'b0100 * 12 + side_data[11: 8] * 3) / 15;
+								end
+								else
+								begin
+									red   <= side_data[ 3: 0];
+									green <= side_data[ 7: 4];
+									blue  <= side_data[11: 8];
+								end
+							end
+							else
+							begin
+								red   <= obstacle_data[0][ 3: 0];
+								green <= obstacle_data[0][ 7: 4];
+								blue  <= obstacle_data[0][11: 8];
+							end
+						end
+						else if (obstacle_pos1 && !iscollide1)
+						begin
+							if (obstacle_data[1] == 12'h0f0 || obstacle_data[1] == 12'h1f1 || obstacle_data[1] == 12'h2f2 || obstacle_data[1] == 12'h0e0)
+							begin
+								if (slide_pos)
+								begin
+									red   <= (4'b1111 * 12 + side_data[ 3: 0] * 3) / 15;
+									green <= (4'b1111 * 12 + side_data[ 7: 4] * 3) / 15;
+									blue  <= (4'b1111 * 12 + side_data[11: 8] * 3) / 15;
+								end
+								else if (road_pos)
+								begin
+									red   <= (4'b0101 * 12 + side_data[ 3: 0] * 3) / 15;
+									green <= (4'b0101 * 12 + side_data[ 7: 4] * 3) / 15;
+									blue  <= (4'b0100 * 12 + side_data[11: 8] * 3) / 15;
+								end
+								else
+								begin
+									red   <= side_data[ 3: 0];
+									green <= side_data[ 7: 4];
+									blue  <= side_data[11: 8];
+								end
+							end
+							else
+							begin
+								red   <= obstacle_data[1][ 3: 0];
+								green <= obstacle_data[1][ 7: 4];
+								blue  <= obstacle_data[1][11: 8];
+							end
+						end
+						else if (obstacle_pos2 && !iscollide2)
+						begin
+							if (obstacle_data[2] == 12'h0f0 || obstacle_data[2] == 12'h1f1 || obstacle_data[2] == 12'h2f2 || obstacle_data[2] == 12'h0e0)
+							begin
+								if (slide_pos)
+								begin
+									red   <= (4'b1111 * 12 + side_data[ 3: 0] * 3) / 15;
+									green <= (4'b1111 * 12 + side_data[ 7: 4] * 3) / 15;
+									blue  <= (4'b1111 * 12 + side_data[11: 8] * 3) / 15;
+								end
+								else if (road_pos)
+								begin
+									red   <= (4'b0101 * 12 + side_data[ 3: 0] * 3) / 15;
+									green <= (4'b0101 * 12 + side_data[ 7: 4] * 3) / 15;
+									blue  <= (4'b0100 * 12 + side_data[11: 8] * 3) / 15;
+								end
+								else
+								begin
+									red   <= side_data[ 3: 0];
+									green <= side_data[ 7: 4];
+									blue  <= side_data[11: 8];
+								end
+							end
+							else
+							begin
+								red   <= obstacle_data[2][ 3: 0];
+								green <= obstacle_data[2][ 7: 4];
+								blue  <= obstacle_data[2][11: 8];
+							end
+						end
+						else if (obstacle_pos3 && !iscollide3)
+						begin
+							if (obstacle_data[3] == 12'h0f0 || obstacle_data[3] == 12'h1f1 || obstacle_data[3] == 12'h2f2 || obstacle_data[3] == 12'h0e0)
+							begin
+								if (slide_pos)
+								begin
+									red   <= (4'b1111 * 12 + side_data[ 3: 0] * 3) / 15;
+									green <= (4'b1111 * 12 + side_data[ 7: 4] * 3) / 15;
+									blue  <= (4'b1111 * 12 + side_data[11: 8] * 3) / 15;
+								end
+								else if (road_pos)
+								begin
+									red   <= (4'b0101 * 12 + side_data[ 3: 0] * 3) / 15;
+									green <= (4'b0101 * 12 + side_data[ 7: 4] * 3) / 15;
+									blue  <= (4'b0100 * 12 + side_data[11: 8] * 3) / 15;
+								end
+								else
+								begin
+									red   <= side_data[ 3: 0];
+									green <= side_data[ 7: 4];
+									blue  <= side_data[11: 8];
+								end
+							end
+							else
+							begin
+								red   <= obstacle_data[3][ 3: 0];
+								green <= obstacle_data[3][ 7: 4];
+								blue  <= obstacle_data[3][11: 8];
+							end
+						end
+						else if (obstacle_pos4 && !iscollide4)
+						begin
+							if (obstacle_data[4] == 12'h0f0 || obstacle_data[4] == 12'h1f1 || obstacle_data[4] == 12'h2f2 || obstacle_data[4] == 12'h0e0)
+							begin
+								if (slide_pos)
+								begin
+									red   <= (4'b1111 * 12 + side_data[ 3: 0] * 3) / 15;
+									green <= (4'b1111 * 12 + side_data[ 7: 4] * 3) / 15;
+									blue  <= (4'b1111 * 12 + side_data[11: 8] * 3) / 15;
+								end
+								else if (road_pos)
+								begin
+									red   <= (4'b0101 * 12 + side_data[ 3: 0] * 3) / 15;
+									green <= (4'b0101 * 12 + side_data[ 7: 4] * 3) / 15;
+									blue  <= (4'b0100 * 12 + side_data[11: 8] * 3) / 15;
+								end
+								else
+								begin
+									red   <= side_data[ 3: 0];
+									green <= side_data[ 7: 4];
+									blue  <= side_data[11: 8];
+								end
+							end
+							else
+							begin
+								red   <= obstacle_data[4][ 3: 0];
+								green <= obstacle_data[4][ 7: 4];
+								blue  <= obstacle_data[4][11: 8];
+							end
+						end
+					end
+					else								//===================================================== Layer 2
+					begin
+					//=======================================================================
+					// Render the rolling road line:
+					//	||		||		||		||		||		||
+					//	||		||		||		||		||		||
+					//	||										||
+					//	||		||		||		||		||		||
+					//	||		||		||		||		||		||
+					//	||										||
+					//	||		||		||		||		||		||
+					//	||		||		||		||		||		||
+					//=======================================================================
+						if ((pixel_x >= 74 && pixel_x < 85) || (pixel_x >= 554 && pixel_x < 565))
+						begin
+							red   <= (4'b1111 * 12 + side_data[ 3: 0] * 3) / 15;
+							green <= (4'b1111 * 12 + side_data[ 7: 4] * 3) / 15;
+							blue  <= (4'b1111 * 12 + side_data[11: 8] * 3) / 15;
+						end
+						else
+						begin
+							if (((pixel_x >= 74 + lane_x) && (pixel_x < 85 + lane_x)) || ((pixel_x >= 74 + 2 * lane_x) && (pixel_x < 85 + 2 * lane_x)) || ((pixel_x >= 74 + 3 * lane_x) && (pixel_x < 85 + 3 * lane_x)) || ((pixel_x >= 74 + 4 * lane_x) && (pixel_x < 85 + 4 * lane_x)))
+							begin
+								for (i = 0; i < 480; i = i + 60)
+								begin
+									if (dot_y >= i && dot_y < i + slide_y)
+									begin
+										red   <= (4'b1111 * 12 + side_data[ 3: 0] * 3) / 15;
+										green <= (4'b1111 * 12 + side_data[ 7: 4] * 3) / 15;
+										blue  <= (4'b1111 * 12 + side_data[11: 8] * 3) / 15;
+									end
+									else if (dot_y >= i + slide_y && dot_y < i + slide_y + interval)
+									begin
+										red   <= (4'b0101 * 12 + side_data[ 3: 0] * 3) / 15;
+										green <= (4'b0101 * 12 + side_data[ 7: 4] * 3) / 15;
+										blue  <= (4'b0100 * 12 + side_data[11: 8] * 3) / 15;
+									end
+								end
+							end
+							else
+							begin
+								if (pixel_x >= 74 && pixel_x < 565)
+								begin
+									red   <= (4'b0101 * 12 + side_data[ 3: 0] * 3) / 15;
+									green <= (4'b0101 * 12 + side_data[ 7: 4] * 3) / 15;
+									blue  <= (4'b0100 * 12 + side_data[11: 8] * 3) / 15;	
+								end
+								else
+								begin
+									red   <= side_data[ 3: 0];
+									green <= side_data[ 7: 4];
+									blue  <= side_data[11: 8];
+								end
+							end
+						end
 					end
 				end
 			endcase

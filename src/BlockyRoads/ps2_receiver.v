@@ -47,14 +47,12 @@ module ps2_receiver(
 			ps2d_filter <= {ps2d, ps2d_filter[7:1]};
 			if (ps2c_filter == 8'b1111_1111)
 				PS2Cf <= 1;
-			else
-				if (ps2c_filter == 8'b0000_0000)
-					PS2Cf <= 0;
+			else if (ps2c_filter == 8'b0000_0000)
+				PS2Cf <= 0;
 			if (ps2d_filter == 8'b1111_1111)
 				PS2Df <= 1;
-			else
-				if (ps2d_filter == 8'b0000_0000)
-					PS2Df <= 0;
+			else if (ps2d_filter == 8'b0000_0000)
+				PS2Df <= 0;
 		end
 	end
 	

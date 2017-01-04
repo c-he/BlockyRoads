@@ -85,7 +85,7 @@ int loadBitmapBW(const char *fileIn, const char *fileOut) // 0 for black 1 for w
 
 int main(void)
 {
-	loadBitmapBW("startBtn.bmp", "startBtn.coe");
+	loadBitmapBW("explosion.bmp", "explosion.coe");
 	
 	//return 0;
 }

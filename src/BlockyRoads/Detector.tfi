@@ -1,0 +1,25 @@
+
+
+
+// Instantiate the module
+Detector instance_name (
+    .mycar_pos_x(mycar_pos_x), 
+    .mycar_pos_y(mycar_pos_y), 
+    .obstacle_pos_x0(obstacle_pos_x0), 
+    .obstacle_pos_x1(obstacle_pos_x1), 
+    .obstacle_pos_x2(obstacle_pos_x2), 
+    .obstacle_pos_x3(obstacle_pos_x3), 
+    .obstacle_pos_x4(obstacle_pos_x4), 
+    .obstacle_pos_y0(obstacle_pos_y0), 
+    .obstacle_pos_y1(obstacle_pos_y1), 
+    .obstacle_pos_y2(obstacle_pos_y2), 
+    .obstacle_pos_y3(obstacle_pos_y3), 
+    .obstacle_pos_y4(obstacle_pos_y4), 
+    .iscollide0(iscollide0), 
+    .iscollide1(iscollide1), 
+    .iscollide2(iscollide2), 
+    .iscollide3(iscollide3), 
+    .iscollide4(iscollide4)
+    );
+
+

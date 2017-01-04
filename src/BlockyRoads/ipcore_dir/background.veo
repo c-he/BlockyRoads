@@ -49,7 +49,7 @@
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 background your_instance_name (
   .clka(clka), // input clka
-  .addra(addra), // input [15 : 0] addra
+  .addra(addra), // input [16 : 0] addra
   .douta(douta) // output [11 : 0] douta
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------

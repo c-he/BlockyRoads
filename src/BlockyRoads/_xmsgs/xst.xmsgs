@@ -5,6 +5,297 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\ipcore_dir\background.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">background</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\ipcore_dir\startBtn.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">startBtn</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\ipcore_dir\side.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">side</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\ipcore_dir\car.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">car</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\ipcore_dir\police.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">police</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\ipcore_dir\explosion.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">explosion</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 129: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 130: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 131: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 135: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 136: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 137: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 159: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 160: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 161: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 165: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 166: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 167: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 189: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 190: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 191: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 195: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 196: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 197: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 219: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 220: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 221: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 225: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 226: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 227: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 249: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 250: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 251: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 255: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 256: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 257: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 279: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 280: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 281: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 285: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 286: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 287: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 305: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 306: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 307: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 311: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 312: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 313: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 337: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 338: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 339: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 343: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 344: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 345: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 367: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 368: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 369: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 373: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 374: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 375: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 397: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 398: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 399: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 403: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 404: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 405: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 427: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 428: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 429: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 433: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 434: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 435: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 457: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 458: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 459: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 463: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 464: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 465: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 487: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 488: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 489: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 493: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 494: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 495: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 527: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 528: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 529: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 539: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 540: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 541: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 545: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 546: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 547: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 555: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 556: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 557: Result of <arg fmt="%d" index="1">7</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 95: Assignment to <arg fmt="%s" index="1">clk100</arg> ignored, since the identifier is never used
+</msg>
+
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\vga_sync.v" Line 37: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
@@ -17,43 +308,172 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\vga_sync.v" Line 81: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\ipcore_dir\background.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">background</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 145: Result of <arg fmt="%d" index="1">21</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\ipcore_dir\startBtn.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">startBtn</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 147: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\ipcore_dir\road.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">road</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 148: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 67: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 152: Result of <arg fmt="%d" index="1">20</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">14</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 70: Result of <arg fmt="%d" index="1">21</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 158: Result of <arg fmt="%d" index="1">21</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 73: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 170: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">13</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 74: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 177: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 77: Result of <arg fmt="%d" index="1">20</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">13</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 182: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">13</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Renderer.v" Line 84: Result of <arg fmt="%d" index="1">21</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 185: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Model.v" Line 51: Port <arg fmt="%s" index="1">clk100</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 190: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">13</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 193: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 198: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">13</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 201: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 206: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">13</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 209: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 214: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">13</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 219: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 222: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 48: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 49: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 50: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 51: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 53: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 54: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 55: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 58: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 59: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 60: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 63: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 64: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 65: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 66: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 68: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 69: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 70: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 71: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 73: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 74: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 75: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Detector.v" Line 76: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 579: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 581: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 583: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 585: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 587: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 597: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 604: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 611: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 618: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 625: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 653: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 658: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 663: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v" Line 668: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\x7segbc.v" Line 118: Result of <arg fmt="%d" index="1">21</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">20</arg>-bit target.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">direction</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-</msg>
-
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">red&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clr</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">red&lt;2&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -89,223 +509,211 @@
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">blue&lt;0&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Model.v</arg>&quot; line <arg fmt="%s" index="2">51</arg>: Output port &lt;<arg fmt="%s" index="3">clk100</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">div_key</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">red&lt;3&gt;</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">status_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">model_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\Controller.v</arg>&quot; line <arg fmt="%s" index="2">95</arg>: Output port &lt;<arg fmt="%s" index="3">clk100</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">div_unit</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">status_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">model_unit</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
 <msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_a_to_g</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">status_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Model</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/num_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">status_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Model</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/scroll_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_unit/cnt_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Renderer</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/scroll_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_unit/cnt_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Renderer</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_unit/cnt_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Renderer</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_unit/cnt_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Renderer</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_unit/cnt_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Renderer</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_unit/cnt_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Renderer</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_unit/cnt_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Renderer</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_unit/cnt_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Renderer</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_unit/cnt_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Renderer</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_unit/cnt_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Renderer</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_unit/cnt_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Renderer</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_unit/cnt_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Renderer</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_49</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_42</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_40</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_39</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_32</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_x_4_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_y_4_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_y_4_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_y_4_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_y_4_40</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_y_4_41</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_y_4_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_y_4_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_y_4_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">div_key/cnt_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Model</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_y_4_40</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">model_unit/direction_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">control_unit/obstacle_pos_y_4_41</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">BR_Top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">model_unit/direction_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt;.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">model_unit/seg_disp/clkdiv_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;control_unit/div_unit/cnt_17&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">model_unit/direction_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt;.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">model_unit/seg_disp/clkdiv_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;control_unit/div_unit/cnt_18&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">model_unit/direction_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt;.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">model_unit/seg_disp/clkdiv_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;control_unit/div_unit/cnt_19&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_10&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_0&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_11&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_1&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_12&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_2&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_13&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_3&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_14&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_4&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_15&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_5&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_16&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_6&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_17&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_10&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_18&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_7&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_19&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_11&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/div_key/cnt_0&gt; &lt;model_unit/seg_disp/clkdiv_0&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_8&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/div_key/cnt_1&gt; &lt;model_unit/seg_disp/clkdiv_1&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_12&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_2&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_9&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_3&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_13&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">model_unit/status_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/flag&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_14&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_4&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_15&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_5&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_6&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_7&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_8&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">render_unit/div_unit/cnt_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_9&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">control_unit/div_unit/cnt_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">BR_Top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;model_unit/seg_disp/clkdiv_16&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
