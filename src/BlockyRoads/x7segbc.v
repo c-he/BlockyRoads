@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module x7segbc(
-    input wire clk, clr,
+    input wire clk,
 	input wire [31:0] x,
 	output reg [ 6:0] a_to_g,
 	output reg [ 7:0] an,
@@ -27,7 +27,7 @@ module x7segbc(
 	);
 	
 	wire [ 2:0] s;
-	reg  [ 3:0] digit;
+	reg  [ 4:0] digit;
 	wire [ 7:0] aen;
 	reg  [19:0] clkdiv;
 
@@ -68,15 +68,15 @@ module x7segbc(
 	// MUX 8 to 1
 	always @*
 		case (s)
-			0: digit       = x[ 3: 0];
-			1: digit       = x[ 7: 4];
-			2: digit       = x[11: 8];
-			3: digit       = x[15:12];
-			4: digit       = x[19:16];
-			5: digit       = x[23:20];
-			6: digit       = x[27:24];
-			7: digit       = x[31:28];
-			default: digit = x[ 3: 0];
+			0: digit       = {1'b0, x[ 3: 0]};
+			1: digit       = {1'b0, x[ 7: 4]};
+			2: digit       = {1'b0, x[11: 8]};
+			3: digit       = {1'b0, x[15:12]};
+			4: digit       = 5'b1_0000;
+			5: digit       = 5'b1_0001;
+			6: digit       = 5'b1_0010;
+			7: digit       = 5'b1_0011;
+			default: digit = {1'b0, x[ 3: 0]};
 		endcase
 	
 	// hex7seg
@@ -98,7 +98,11 @@ module x7segbc(
 			'hD: a_to_g     = 7'b0100001;
 			'hE: a_to_g     = 7'b0000110;
 			'hF: a_to_g     = 7'b0001110;
-			default: a_to_g = 7'b1000000;	// 0
+			// User defined character
+			'h10: a_to_g    = 7'b0001011;	// h
+			'h11: a_to_g    = 7'b0010000;	// g
+			'h12: a_to_g    = 7'b1111001;	// I
+			'h13: a_to_g    = 7'b0001001;	// H
 		endcase
 	
 	// Digit select
@@ -110,12 +114,9 @@ module x7segbc(
 	end
 	
 	// Clock divider
-	always @ (posedge clk or posedge clr)
+	always @ (posedge clk)
 	begin
-		if (clr == 1)
-			clkdiv <= 0;
-		else
-			clkdiv <= clkdiv + 1;
+		clkdiv <= clkdiv + 1;
 	end
 	
 endmodule

@@ -1,8 +1,11 @@
-C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\BR_Top.ngc 1483550231
+C:\Users\fairy\Documents\Computer Science\Digital Logic Design\Project\BlockyRoads\src\BlockyRoads\BR_Top.ngc 1483719614
 ipcore_dir/background.ngc 1483164051
 ipcore_dir/side.ngc 1483178463
+ipcore_dir/explosion.ngc 1483261746
+ipcore_dir/game_over.ngc 1483609811
 ipcore_dir/startBtn.ngc 1483166715
+ipcore_dir/score.ngc 1483610704
+ipcore_dir/digit.ngc 1483648164
 ipcore_dir/car.ngc 1483182755
 ipcore_dir/police.ngc 1483212134
-ipcore_dir/explosion.ngc 1483261746
 OK

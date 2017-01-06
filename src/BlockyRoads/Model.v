@@ -19,19 +19,20 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module Model(
-    input wire clk, clr,
-	input wire [15:0] xkey,
+    input wire clk,
+	input wire [3:0] high_score0, high_score1, high_score2, high_score3,
 	output wire [7:0] segment,
 	output wire [7:0] an
 	);
 
 	wire [ 6:0] a_to_g;
 	wire dp;
+	wire [15:0] High = 16'b0001_0000_0010_0100;
 
 	assign segment = {dp, a_to_g};
 	
-	// Use segment tube to display the scan code of keyboard
-	x7segbc seg_disp (.x({16'b0, xkey}), .clk(clk), .clr(clr), .a_to_g(a_to_g), .an(an), .dp(dp));
+	// Use segment tube to display the highest score
+	x7segbc seg_disp (.x({High, high_score3, high_score2, high_score1, high_score0}), .clk(clk), .a_to_g(a_to_g), .an(an), .dp(dp));
 	
 
 

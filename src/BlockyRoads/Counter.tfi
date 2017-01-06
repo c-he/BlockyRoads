@@ -1,0 +1,19 @@
+
+
+
+// Instantiate the module
+Counter instance_name (
+    .clk(clk), 
+    .clr(clr), 
+    .plus(plus), 
+    .score0(score0), 
+    .score1(score1), 
+    .score2(score2), 
+    .score3(score3), 
+    .high_score0(high_score0), 
+    .high_score1(high_score1), 
+    .high_score2(high_score2), 
+    .high_score3(high_score3)
+    );
+
+

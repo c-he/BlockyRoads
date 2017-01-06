@@ -22,7 +22,7 @@ module clkdiv(
     input wire clk,
 	input wire clr,
 	output wire clk25m,
-	output wire clk1600,
+	output wire clk800,
 	output wire clk200,
 	output wire clk100,
 	output wire clk50
@@ -46,10 +46,10 @@ module clkdiv(
 		end
 	end
 	
-	assign clk50   = cnt[20];
-	assign clk100  = cnt[19];
-	assign clk200  = cnt[18];
-	assign clk1600 = cnt[15];
-	assign clk25m  = cnt[ 1];
+	assign clk50  = cnt[20];
+	assign clk100 = cnt[19];
+	assign clk200 = cnt[18];
+	assign clk800 = cnt[16];
+	assign clk25m = cnt[ 1];
 
 endmodule
