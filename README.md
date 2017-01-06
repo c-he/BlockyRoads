@@ -3,13 +3,13 @@
 
 ---
 
-![](\pics\Blocky_Roads.png)
+![](https://github.com/Fairyland0902/BlockyRoads/raw/master/pics/Blocky_Roads.png)
 
 ---
 
 # Overall Structure
 - MVC Frame
-![](\pics\MVC.png)
+![](https://github.com/Fairyland0902/BlockyRoads/raw/master/pics/MVC.png)
 
 ---
 
@@ -81,7 +81,7 @@ endcase
 
 ---
 
-![](pics\Segment.jpeg)
+![](https://github.com/Fairyland0902/BlockyRoads/raw/master/pics/Segment.jpeg)
 
 ---
 
@@ -107,7 +107,7 @@ endcase
 ## Layers
 ### Background Color Filter
 - Pseudo code:
-  ```verilog
+```verilog
   if (object_pos)
   begin
       if (object_data == background color)
@@ -115,14 +115,14 @@ endcase
       else
       	Render this object
   end
-  ```
+```
 
 ---
 
 ## Layers
 ### General Procedure of Rendering
 - Pseudo code:
-  ```verilog
+```verilog
   if (layer0)
   begin
       if (object0_pos)
@@ -133,7 +133,7 @@ endcase
   end
   if (layer1)
       . . .
-  ```
+```
 
 ---
 
@@ -215,7 +215,7 @@ Then, we get the four follwing situations:
 
 ---
 
-![](\pics\Collision_Detector.png)
+![](https://github.com/Fairyland0902/BlockyRoads/raw/master/pics/Collision_Detector.png)
 
 ---
 
